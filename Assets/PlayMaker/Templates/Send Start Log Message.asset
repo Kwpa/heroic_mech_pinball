@@ -157,7 +157,7 @@ MonoBehaviour:
         paramByteDataSize: 0000000000000000010000000000000000000000000000000000000000000000000000000000000001000000040000000000000001000000
     - name: Finish FSM
       description: 
-      colorIndex: 0
+      colorIndex: 6
       position:
         serializedVersion: 2
         x: 269

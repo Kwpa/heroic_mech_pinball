@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1219815696, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
-  m_Name: CheckTriggerStatusOfArray
+  m_Name: GetTriggerStatusOfArrayCount
   m_EditorClassIdentifier: PlayMaker.dll::FsmTemplate
   category: 
   fsm:
@@ -54,7 +54,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Check Pass And Set Progress
+        toState: SetPassCount
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -223,8 +223,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 602
-        y: 268
+        x: 374
+        y: 214
         width: 100
         height: 16
       isBreakpoint: 0
@@ -289,148 +289,6 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 000000000100000000000000
         paramByteDataSize: 000000000000000001000000
-    - name: Check Pass And Set Progress
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 303
-        y: 178
-        width: 201.56
-        height: 48
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: Equals
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: Set True
-        linkStyle: 0
-        linkConstraint: 0
-        linkTarget: 0
-        colorIndex: 0
-      - fsmEvent:
-          name: FINISHED
-          isSystemEvent: 1
-          isGlobal: 0
-        toState: Finish FSM
-        linkStyle: 0
-        linkConstraint: 0
-        linkTarget: 0
-        colorIndex: 0
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.ArrayLength
-        - HutongGames.PlayMaker.Actions.FloatOperator
-        - HutongGames.PlayMaker.Actions.IntCompare
-        customNames:
-        - 
-        - 
-        - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 000000000300000008000000
-        actionHashCodes: fb2588010cdb040509faa102
-        unityObjectParams: []
-        fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams: []
-        fsmArrayParams:
-        - useVariable: 1
-          name: InputArray
-          tooltip: 
-          showInInspector: 1
-          networkSync: 0
-          type: 3
-          objectTypeName: UnityEngine.Object
-          floatValues: []
-          intValues: 
-          boolValues: 
-          stringValues: []
-          vector4Values: []
-          objectReferences: []
-        fsmEnumParams: []
-        fsmFloatParams:
-        - useVariable: 1
-          name: CurrentCount
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 1
-          name: TotalCount
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 1
-          name: ProtocolStageProgress
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        fsmIntParams:
-        - useVariable: 1
-          name: TotalCount
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 1
-          name: CurrentCount
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 1
-          name: TotalCount
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        fsmBoolParams: []
-        fsmVector2Params: []
-        fsmVector3Params: []
-        fsmColorParams: []
-        fsmRectParams: []
-        fsmQuaternionParams: []
-        stringParams:
-        - Equals
-        - 
-        - 
-        byteData: 00030000000000
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 2900000010000000010000000f0000000f000000070000000f00000001000000100000001000000017000000170000001700000001000000
-        paramName:
-        - array
-        - length
-        - everyFrame
-        - float1
-        - float2
-        - operation
-        - storeResult
-        - everyFrame
-        - integer1
-        - integer2
-        - equal
-        - lessThan
-        - greaterThan
-        - everyFrame
-        paramDataPos: 0000000000000000000000000000000001000000010000000200000005000000010000000200000000000000010000000200000006000000
-        paramByteDataSize: 0000000000000000010000000000000000000000040000000000000001000000000000000000000000000000000000000000000001000000
     - name: Add One
       description: 
       colorIndex: 0
@@ -509,14 +367,14 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 000000000100000000000000
         paramByteDataSize: 000000000000000001000000
-    - name: Set True
+    - name: SetPassCount
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 354
-        y: 250
-        width: 100
+        x: 219
+        y: 216
+        width: 116.79
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -533,13 +391,13 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.SetBoolValue
+        - HutongGames.PlayMaker.Actions.SetIntValue
         customNames:
         - 
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: 27fbe103
+        actionHashCodes: 603dd905
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -555,20 +413,20 @@ MonoBehaviour:
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams: []
-        fsmIntParams: []
-        fsmBoolParams:
+        fsmIntParams:
         - useVariable: 1
           name: PassOutput
           tooltip: 
           showInInspector: 0
           networkSync: 0
           value: 0
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: CurrentCount
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 0
+        fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -580,10 +438,10 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 110000001100000001000000
+        paramDataType: 100000001000000001000000
         paramName:
-        - boolVariable
-        - boolValue
+        - intVariable
+        - intValue
         - everyFrame
         paramDataPos: 000000000100000000000000
         paramByteDataSize: 000000000000000001000000
@@ -622,15 +480,15 @@ MonoBehaviour:
         showInInspector: 0
         networkSync: 0
         value: 0
-      boolVariables:
       - useVariable: 1
-        name: ProtocolStageObjectStatus
+        name: PassOutput
         tooltip: 
         showInInspector: 0
         networkSync: 0
         value: 0
+      boolVariables:
       - useVariable: 1
-        name: PassOutput
+        name: ProtocolStageObjectStatus
         tooltip: 
         showInInspector: 0
         networkSync: 0
@@ -677,7 +535,7 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
-    outVariableIndices: 0400000000000000
+    outVariableIndices: 0000000003000000
     keepDelayedEventsOnStateExit: 0
     preprocessed: 0
     ExposedEvents: []
