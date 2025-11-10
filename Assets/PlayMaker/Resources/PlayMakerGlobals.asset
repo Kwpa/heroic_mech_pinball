@@ -37,3 +37,5 @@ MonoBehaviour:
   - Cancel Protocol 2
   - Activate Protocol 2
   - Player Receives Damage
+  - SetData
+  - InstantiateDebugPanelElement
