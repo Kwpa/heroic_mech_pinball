@@ -310,6 +310,7 @@ GameObject:
   - component: {fileID: 4251988304217848398}
   - component: {fileID: 2083608338656636508}
   - component: {fileID: 9216790708226632799}
+  - component: {fileID: 1364589900443597513}
   m_Layer: 5
   m_Name: DebugPinballCabinetElement
   m_TagString: Untagged
@@ -471,14 +472,21 @@ MonoBehaviour:
         showInInspector: 0
         networkSync: 0
         value: {fileID: 0}
-      objectVariables: []
+      objectVariables:
+      - useVariable: 1
+        name: StoreSFX
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        typeName: UnityEngine.AudioClip
+        value: {fileID: 0}
       materialVariables: []
       textureVariables: []
       arrayVariables: []
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -487,7 +495,7 @@ MonoBehaviour:
     password: 
     locked: 0
     manualUpdate: 0
-    outVariableIndices: 
+    outVariableIndices: 03000000
     keepDelayedEventsOnStateExit: 0
     preprocessed: 0
     ExposedEvents: []
@@ -571,10 +579,10 @@ MonoBehaviour:
   fsm:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
-    name: Debug Sound
-    startState: State 1
+    name: DebugSound
+    startState: Begin
     states:
-    - name: State 1
+    - name: Begin
       description: 
       colorIndex: 0
       position:
@@ -626,29 +634,39 @@ MonoBehaviour:
         paramName: []
         paramDataPos: 
         paramByteDataSize: 
-    - name: State 2
+    - name: Play Audio
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 197
         y: 101
-        width: 100
+        width: 154.06
         height: 16
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions: []
       actionData:
-        actionNames: []
-        customNames: []
-        actionEnabled: 
-        actionIsOpen: 
-        actionStartIndex: 
-        actionHashCodes: 
+        actionNames:
+        - HutongGames.PlayMaker.Actions.AudioPlay
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 81294e04
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -656,44 +674,75 @@ MonoBehaviour:
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams: []
-        fsmObjectParams: []
+        fsmObjectParams:
+        - useVariable: 1
+          name: SFX
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: UnityEngine.AudioClip
+          value: {fileID: 0}
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
-        fsmFloatParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         fsmIntParams: []
-        fsmBoolParams: []
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams: []
+        stringParams:
+        - 
         byteData: 
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 
-        paramName: []
-        paramDataPos: 
-        paramByteDataSize: 
+        paramDataType: 140000000f000000180000001100000017000000
+        paramName:
+        - gameObject
+        - volume
+        - oneShotClip
+        - WaitForEndOfClip
+        - finishedEvent
+        paramDataPos: 0000000000000000000000000000000000000000
+        paramByteDataSize: 0000000000000000000000000000000000000000
     events:
-    - name: Play Sound
+    - name: Play Triggered Sound
       isSystemEvent: 0
       isGlobal: 0
     globalTransitions:
     - fsmEvent:
-        name: Play Sound
+        name: Play Triggered Sound
         isSystemEvent: 0
         isGlobal: 0
-      toState: State 2
+      toState: Play Audio
       linkStyle: 0
       linkConstraint: 0
       linkTarget: 0
       colorIndex: 0
     variables:
-      floatVariables: []
+      floatVariables:
+      - useVariable: 1
+        name: 
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       intVariables: []
       boolVariables: []
       stringVariables: []
@@ -703,14 +752,21 @@ MonoBehaviour:
       rectVariables: []
       quaternionVariables: []
       gameObjectVariables: []
-      objectVariables: []
+      objectVariables:
+      - useVariable: 1
+        name: SFX
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        typeName: UnityEngine.AudioClip
+        value: {fileID: 0}
       materialVariables: []
       textureVariables: []
       arrayVariables: []
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 
+      variableCategoryIDs: 0000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -758,6 +814,103 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
+--- !u!82 &1364589900443597513
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6065024905256336541}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &7031797657447001494
 GameObject:
   m_ObjectHideFlags: 0

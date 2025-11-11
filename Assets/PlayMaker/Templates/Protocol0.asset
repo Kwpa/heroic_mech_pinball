@@ -388,13 +388,13 @@ MonoBehaviour:
           networkSync: 0
           value: '[ Power Bumpers Complete! ]'
         fsmObjectParams:
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: SFX
           tooltip: 
           showInInspector: 0
           networkSync: 0
           typeName: UnityEngine.AudioClip
-          value: {fileID: 8300000, guid: af25fc32fd0c9874cb72db093db0266d, type: 3}
+          value: {fileID: 0}
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
@@ -1282,7 +1282,14 @@ MonoBehaviour:
         showInInspector: 0
         networkSync: 0
         value: {fileID: 0}
-      objectVariables: []
+      objectVariables:
+      - useVariable: 1
+        name: SFX
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        typeName: UnityEngine.AudioClip
+        value: {fileID: 0}
       materialVariables: []
       textureVariables: []
       arrayVariables:
@@ -1328,7 +1335,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
