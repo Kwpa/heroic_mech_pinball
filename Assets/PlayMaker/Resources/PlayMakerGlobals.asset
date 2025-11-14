@@ -30,10 +30,12 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 00000000
+    variableCategoryIDs: 0000000000000000
   events:
   - Activate Protocol 1
   - Cancel Protocol 1
   - Cancel Protocol 2
   - Activate Protocol 2
   - Player Receives Damage
+  - SetTriggeredStatus
+  - InstantiateDebugPanelElement
