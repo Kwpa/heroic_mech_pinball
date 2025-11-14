@@ -128,7 +128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 100618660}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PinballEnvironment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,8 +143,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100618659}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.000000014901161, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0037596514, y: 13.505703, z: -84.500015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -165,7 +165,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 292522395}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Slants
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -559,7 +559,7 @@ GameObject:
   - component: {fileID: 543499386}
   - component: {fileID: 543499385}
   - component: {fileID: 543499384}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Right Guide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2054,7 +2054,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 649012527}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Guides
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2092,7 +2092,7 @@ GameObject:
   - component: {fileID: 676596080}
   - component: {fileID: 676596079}
   - component: {fileID: 676596078}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Flipper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2408,7 +2408,7 @@ GameObject:
   - component: {fileID: 692004387}
   - component: {fileID: 692004386}
   - component: {fileID: 692004385}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2694,7 +2694,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1093870565}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Flippers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2910,7 +2910,7 @@ GameObject:
   - component: {fileID: 1256187420}
   - component: {fileID: 1256187419}
   - component: {fileID: 1256187418}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Left Slant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3501,7 +3501,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1356762603}
   - component: {fileID: 1356762602}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PlaymakerDebug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3760,8 +3760,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356762601}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.000000014901161, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0037596514, y: 13.505703, z: -84.500015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3781,7 +3781,7 @@ GameObject:
   - component: {fileID: 1381368814}
   - component: {fileID: 1381368813}
   - component: {fileID: 1381368812}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40781,7 +40781,7 @@ GameObject:
   - component: {fileID: 1555765980}
   - component: {fileID: 1555765979}
   - component: {fileID: 1555765978}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Right Slant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41732,7 +41732,7 @@ GameObject:
   - component: {fileID: 1608833884}
   - component: {fileID: 1608833883}
   - component: {fileID: 1608833882}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Left Guide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43233,7 +43233,7 @@ GameObject:
   - component: {fileID: 1651890596}
   - component: {fileID: 1651890595}
   - component: {fileID: 1651890600}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44213,13 +44213,13 @@ GameObject:
   - component: {fileID: 1673898416}
   - component: {fileID: 1673898415}
   - component: {fileID: 1673898414}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1673898414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44332,7 +44332,7 @@ Transform:
   m_GameObject: {fileID: 1673898413}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0, z: 0, w: 0.8660254}
-  m_LocalPosition: {x: 0, y: 30, z: -27}
+  m_LocalPosition: {x: -0.0037822723, y: 43.505703, z: -111.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44355,7 +44355,7 @@ GameObject:
   - component: {fileID: 1825772891}
   - component: {fileID: 1825772890}
   - component: {fileID: 1825772897}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LeftFlipper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44436,7 +44436,7 @@ Rigidbody:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 129
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
@@ -45783,7 +45783,7 @@ GameObject:
   - component: {fileID: 1847612737}
   - component: {fileID: 1847612736}
   - component: {fileID: 1847612735}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Directional Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45893,7 +45893,7 @@ Transform:
   m_GameObject: {fileID: 1847612734}
   serializedVersion: 2
   m_LocalRotation: {x: 0.6298695, y: -0.10266792, z: 0.0787794, w: 0.76584435}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: -0.0037822723, y: 16.505703, z: -84.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46091,7 +46091,7 @@ GameObject:
   - component: {fileID: 1927153520}
   - component: {fileID: 1927153519}
   - component: {fileID: 1927153518}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Flipper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46409,7 +46409,7 @@ GameObject:
   - component: {fileID: 1944854004}
   - component: {fileID: 1944854003}
   - component: {fileID: 1944854002}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70577,60 +70577,6 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
---- !u!1 &2013152545
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2013152547}
-  - component: {fileID: 2013152546}
-  m_Layer: 0
-  m_Name: PlayMakerGUI
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2013152546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013152545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -73581967, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: PlayMaker.dll::PlayMakerGUI
-  previewOnGUI: 1
-  enableGUILayout: 0
-  drawStateLabels: 1
-  enableStateLabelsInBuilds: 0
-  GUITextureStateLabels: 0
-  GUITextStateLabels: 0
-  filterLabelsWithDistance: 0
-  maxLabelDistance: 10
-  controlMouseCursor: 1
-  labelScale: 1
---- !u!4 &2013152547
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013152545}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2015705618
 GameObject:
   m_ObjectHideFlags: 0
@@ -70736,8 +70682,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2015705618}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6, y: 0.4, z: -17}
+  m_LocalRotation: {x: -0, y: 0.000000014901161, z: -0, w: 1}
+  m_LocalPosition: {x: -6.003749, y: 13.905703, z: -101.500015}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -70787,7 +70733,7 @@ GameObject:
   - component: {fileID: 2032990194}
   - component: {fileID: 2032990193}
   - component: {fileID: 2032990200}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RightFlipper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70868,7 +70814,7 @@ Rigidbody:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 129
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
@@ -72390,5 +72336,4 @@ SceneRoots:
   - {fileID: 1847612737}
   - {fileID: 100618660}
   - {fileID: 2015705622}
-  - {fileID: 2013152547}
   - {fileID: 1356762603}
