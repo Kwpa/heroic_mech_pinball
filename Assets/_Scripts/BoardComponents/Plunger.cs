@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class Plunger : MonoBehaviour
@@ -15,6 +16,9 @@ public class Plunger : MonoBehaviour
     private bool cooldown = false;
 
     private List<Rigidbody> rigidbodies = new List<Rigidbody>();
+
+    [Header("Event")]
+    public UnityEvent plungerFired;
 
     private void OnEnable()
     {
@@ -41,6 +45,7 @@ public class Plunger : MonoBehaviour
         }
 
         StartCoroutine(HandleCooldown());
+        plungerFired.Invoke();
     }
 
     private IEnumerator HandleCooldown()
