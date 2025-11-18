@@ -174,7 +174,7 @@ MonoBehaviour:
           name: Zone3
           isSystemEvent: 0
           isGlobal: 0
-        toState: A Z1 2
+        toState: B Z3 1
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -294,7 +294,7 @@ MonoBehaviour:
           name: Zone3
           isSystemEvent: 0
           isGlobal: 0
-        toState: A Z1 3
+        toState: B Z3 2
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -414,7 +414,7 @@ MonoBehaviour:
           name: Zone3
           isSystemEvent: 0
           isGlobal: 0
-        toState: A Z1 4
+        toState: A Z3 3
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -672,7 +672,7 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 000000000100000000000000020000000300000001000000
         paramByteDataSize: 000000000000000001000000000000000000000001000000
-    - name: A Z1 2
+    - name: B Z3 1
       description: 
       colorIndex: 0
       position:
@@ -750,7 +750,7 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 000000000100000000000000
         paramByteDataSize: 000000000000000001000000
-    - name: A Z1 3
+    - name: B Z3 2
       description: 
       colorIndex: 0
       position:
@@ -882,13 +882,13 @@ MonoBehaviour:
         paramName: []
         paramDataPos: 
         paramByteDataSize: 
-    - name: A Z1 4
+    - name: A Z3 3
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 551.22656
-        y: 283.8203
+        x: 561.7969
+        y: 284.97656
         width: 100
         height: 32
       isBreakpoint: 0
@@ -970,15 +970,6 @@ MonoBehaviour:
     - name: Zone3
       isSystemEvent: 0
       isGlobal: 0
-    - name: Zero Diff
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: One Diff
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: Two Diff
-      isSystemEvent: 0
-      isGlobal: 0
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
@@ -1038,16 +1029,7 @@ MonoBehaviour:
     keepDelayedEventsOnStateExit: 0
     preprocessed: 0
     ExposedEvents: []
-    OutputEvents:
-    - name: One Diff
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: Two Diff
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: Zero Diff
-      isSystemEvent: 0
-      isGlobal: 0
+    OutputEvents: []
     RestartOnEnable: 1
     ResetVariablesOnEnable: 0
     EnableDebugFlow: 0

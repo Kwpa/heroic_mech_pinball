@@ -114,7 +114,7 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 000000000100000000000000020000000300000001000000
         paramByteDataSize: 000000000000000001000000000000000000000001000000
-    - name: No Diff
+    - name: Finish
       description: 
       colorIndex: 0
       position:
@@ -185,7 +185,7 @@ MonoBehaviour:
           name: Zero Diff
           isSystemEvent: 0
           isGlobal: 0
-        toState: Begin 2
+        toState: May Charge
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -194,7 +194,7 @@ MonoBehaviour:
           name: Diff
           isSystemEvent: 0
           isGlobal: 0
-        toState: No Diff
+        toState: Finish
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -279,7 +279,7 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 00000000010000000000000001000000020000000300000000000000010000000200000002000000
         paramByteDataSize: 00000000000000000100000001000000000000000000000000000000000000000000000001000000
-    - name: Begin 2
+    - name: May Charge
       description: 
       colorIndex: 0
       position:
@@ -296,7 +296,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: No Diff
+        toState: Finish
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
