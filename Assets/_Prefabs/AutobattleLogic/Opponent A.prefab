@@ -563,7 +563,13 @@ MonoBehaviour:
     events: []
     globalTransitions: []
     variables:
-      floatVariables: []
+      floatVariables:
+      - useVariable: 1
+        name: 
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       intVariables:
       - useVariable: 1
         name: Initiative
@@ -571,7 +577,37 @@ MonoBehaviour:
         showInInspector: 1
         networkSync: 0
         value: 100
-      boolVariables: []
+      - useVariable: 1
+        name: RetreatChance
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 50
+      - useVariable: 1
+        name: CurrentZone
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: CurrentZoneSlot
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 1
+      - useVariable: 1
+        name: Aggression
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 0
+      boolVariables:
+      - useVariable: 1
+        name: Advantage
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 0
       stringVariables: []
       vector2Variables: []
       vector3Variables: []
@@ -579,14 +615,98 @@ MonoBehaviour:
       rectVariables: []
       quaternionVariables: []
       gameObjectVariables: []
-      objectVariables: []
+      objectVariables:
+      - useVariable: 1
+        name: TM_Charge
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        typeName: UnityEngine.Timeline.TimelineAsset
+        value: {fileID: 11400000, guid: 7e83336913db4c34099c51bb1a0bb303, type: 2}
+      - useVariable: 1
+        name: TM_Defeat
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        typeName: UnityEngine.Timeline.TimelineAsset
+        value: {fileID: 11400000, guid: 7e83336913db4c34099c51bb1a0bb303, type: 2}
+      - useVariable: 1
+        name: TM_OneDiffMelee
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        typeName: UnityEngine.Timeline.TimelineAsset
+        value: {fileID: 11400000, guid: 7e83336913db4c34099c51bb1a0bb303, type: 2}
+      - useVariable: 1
+        name: TM_OneDiffMidRange
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        typeName: UnityEngine.Timeline.TimelineAsset
+        value: {fileID: 11400000, guid: 7e83336913db4c34099c51bb1a0bb303, type: 2}
+      - useVariable: 1
+        name: TM_ReceiveDamage
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        typeName: UnityEngine.Timeline.TimelineAsset
+        value: {fileID: 11400000, guid: 7e83336913db4c34099c51bb1a0bb303, type: 2}
+      - useVariable: 1
+        name: TM_Retreat
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        typeName: UnityEngine.Timeline.TimelineAsset
+        value: {fileID: 11400000, guid: 7e83336913db4c34099c51bb1a0bb303, type: 2}
+      - useVariable: 1
+        name: TM_Special_1
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        typeName: UnityEngine.Timeline.TimelineAsset
+        value: {fileID: 11400000, guid: 7e83336913db4c34099c51bb1a0bb303, type: 2}
+      - useVariable: 1
+        name: TM_Special_2
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        typeName: UnityEngine.Timeline.TimelineAsset
+        value: {fileID: 11400000, guid: 7e83336913db4c34099c51bb1a0bb303, type: 2}
+      - useVariable: 1
+        name: TM_Special_3
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        typeName: UnityEngine.Timeline.TimelineAsset
+        value: {fileID: 11400000, guid: 7e83336913db4c34099c51bb1a0bb303, type: 2}
+      - useVariable: 1
+        name: TM_TwoDiff_LongRange
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        typeName: UnityEngine.Timeline.TimelineAsset
+        value: {fileID: 11400000, guid: 7e83336913db4c34099c51bb1a0bb303, type: 2}
+      - useVariable: 1
+        name: TM_ZeroDiffMelee
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        typeName: UnityEngine.Timeline.TimelineAsset
+        value: {fileID: 11400000, guid: 7e83336913db4c34099c51bb1a0bb303, type: 2}
+      - useVariable: 1
+        name: TM_ZeroDiffShortRange
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        typeName: UnityEngine.Timeline.TimelineAsset
+        value: {fileID: 11400000, guid: 7e83336913db4c34099c51bb1a0bb303, type: 2}
       materialVariables: []
       textureVariables: []
       arrayVariables: []
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000
+      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
