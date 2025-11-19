@@ -62095,6 +62095,7 @@ GameObject:
   - component: {fileID: 1673898416}
   - component: {fileID: 1673898415}
   - component: {fileID: 1673898414}
+  - component: {fileID: 1673898418}
   m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -62214,12 +62215,28 @@ Transform:
   m_GameObject: {fileID: 1673898413}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0, z: 0, w: 0.8660254}
-  m_LocalPosition: {x: -0.0037822723, y: 43.505703, z: -111.5}
+  m_LocalPosition: {x: 1.05, y: 35, z: -113}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
+--- !u!114 &1673898418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673898413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1abd0e22cfe3af043bc7e397fe20c1ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FollowBall
+  ball: {fileID: 2015705622}
+  speed: 10
+  minZPos: -112
+  maxZPos: -96
 --- !u!43 &1710402251
 Mesh:
   m_ObjectHideFlags: 0
