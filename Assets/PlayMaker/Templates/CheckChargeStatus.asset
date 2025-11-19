@@ -375,22 +375,7 @@ MonoBehaviour:
         paramDataPos: 000000000100000000000000020000000300000001000000
         paramByteDataSize: 000000000000000001000000000000000000000001000000
     events:
-    - name: Zone1
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: Zone2
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: Zone3
-      isSystemEvent: 0
-      isGlobal: 0
     - name: Zero Diff
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: One Diff
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: Two Diff
       isSystemEvent: 0
       isGlobal: 0
     - name: FINISHED
@@ -455,16 +440,7 @@ MonoBehaviour:
     keepDelayedEventsOnStateExit: 0
     preprocessed: 0
     ExposedEvents: []
-    OutputEvents:
-    - name: One Diff
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: Two Diff
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: Zero Diff
-      isSystemEvent: 0
-      isGlobal: 0
+    OutputEvents: []
     RestartOnEnable: 1
     ResetVariablesOnEnable: 0
     EnableDebugFlow: 0

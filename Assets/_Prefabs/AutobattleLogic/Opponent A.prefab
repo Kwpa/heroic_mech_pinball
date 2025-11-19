@@ -572,17 +572,17 @@ MonoBehaviour:
         value: 0
       intVariables:
       - useVariable: 1
-        name: Initiative
+        name: Aggression
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 100
+        value: 0
       - useVariable: 1
-        name: RetreatChance
+        name: ChargeChance
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 50
+        value: 0
       - useVariable: 1
         name: CurrentZone
         tooltip: 
@@ -596,11 +596,17 @@ MonoBehaviour:
         networkSync: 0
         value: 1
       - useVariable: 1
-        name: Aggression
+        name: Initiative
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 0
+        value: 100
+      - useVariable: 1
+        name: RetreatChance
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 50
       boolVariables:
       - useVariable: 1
         name: Advantage
@@ -790,7 +796,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
