@@ -19,7 +19,7 @@ public class Bumper : MonoBehaviour
 
             //determine force direction
             Vector3 normal = (contactPoint - transform.position).normalized;
-            //Vector3 forceDir = Vector3.Reflect(ballRB.linearVelocity, normal);
+            //Vector3 forceDir = Vector3.Reflect(ballRB.linearVelocity, normal).normalized;
 
             ballRB.AddForce(normal * bounceForce, ForceMode.Impulse);
 
