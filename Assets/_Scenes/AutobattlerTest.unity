@@ -975,7 +975,7 @@ MonoBehaviour:
           name: Retreat
           isSystemEvent: 0
           isGlobal: 0
-        toState: Retreat !
+        toState: Retreat B!
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -984,7 +984,7 @@ MonoBehaviour:
           name: HoldFast
           isSystemEvent: 0
           isGlobal: 0
-        toState: Check Charge Is Possible
+        toState: Check Double Charge Is Possible
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -1141,7 +1141,7 @@ MonoBehaviour:
           name: AttackAgain
           isSystemEvent: 0
           isGlobal: 0
-        toState: CheckZoneDistance
+        toState: Check Retreat Option
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -1479,19 +1479,39 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.GetFsmObject
         - HutongGames.PlayMaker.Actions.GetFsmObject
         - HutongGames.PlayMaker.Actions.GetFsmObject
+        - HutongGames.PlayMaker.Actions.GetFsmObject
+        - HutongGames.PlayMaker.Actions.GetFsmObject
         customNames:
         - 
         - 
         - 
         - 
         - 
-        actionEnabled: 0101010101
-        actionIsOpen: 0101010101
-        actionStartIndex: 00000000050000000a0000000f00000014000000
-        actionHashCodes: 74cb920274cb920274cb920274cb920274cb9202
+        - 
+        - 
+        actionEnabled: 01010101010101
+        actionIsOpen: 01010101010101
+        actionStartIndex: 00000000050000000a0000000f00000014000000190000001e000000
+        actionHashCodes: 74cb920274cb920274cb920274cb920274cb920274cb920274cb9202
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: OpponentWithoutAdvantage
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: OpponentWithAdvantage
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         - ownerOption: 1
           gameObject:
             useVariable: 1
@@ -1562,6 +1582,30 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
+          value: TM_Retreat
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: TM_Charge
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
           value: TM_Defeat
         - useVariable: 0
           name: 
@@ -1601,7 +1645,21 @@ MonoBehaviour:
           value: TM_ZeroDiffMelee
         fsmObjectParams:
         - useVariable: 1
-          name: TM_Charge
+          name: TM_WithoutAdv_Charge
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: UnityEngine.Playables.PlayableAsset
+          value: {fileID: 0}
+        - useVariable: 1
+          name: TM_Adv_Retreat
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: UnityEngine.Playables.PlayableAsset
+          value: {fileID: 0}
+        - useVariable: 1
+          name: TM_Adv_Charge
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -1622,7 +1680,7 @@ MonoBehaviour:
           typeName: UnityEngine.Playables.PlayableAsset
           value: {fileID: 0}
         - useVariable: 1
-          name: TM_Retreat
+          name: TM_WithoutAdv_Retreat
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -1647,12 +1705,12 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 0000000000
+        byteData: 00000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000120000001200000018000000010000001400000012000000120000001800000001000000140000001200000012000000180000000100000014000000120000001200000018000000010000001400000012000000120000001800000001000000
+        paramDataType: 1400000012000000120000001800000001000000140000001200000012000000180000000100000014000000120000001200000018000000010000001400000012000000120000001800000001000000140000001200000012000000180000000100000014000000120000001200000018000000010000001400000012000000120000001800000001000000
         paramName:
         - gameObject
         - fsmName
@@ -1679,8 +1737,18 @@ MonoBehaviour:
         - variableName
         - storeValue
         - everyFrame
-        paramDataPos: 00000000000000000100000000000000000000000100000002000000030000000100000001000000020000000400000005000000020000000200000003000000060000000700000003000000030000000400000008000000090000000400000004000000
-        paramByteDataSize: 00000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000001000000
+        - gameObject
+        - fsmName
+        - variableName
+        - storeValue
+        - everyFrame
+        - gameObject
+        - fsmName
+        - variableName
+        - storeValue
+        - everyFrame
+        paramDataPos: 00000000000000000100000000000000000000000100000002000000030000000100000001000000020000000400000005000000020000000200000003000000060000000700000003000000030000000400000008000000090000000400000004000000050000000a0000000b0000000500000005000000060000000c0000000d0000000600000006000000
+        paramByteDataSize: 0000000000000000000000000000000001000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000001000000
     - name: Set Advantage To B
       description: 
       colorIndex: 1
@@ -2712,7 +2780,7 @@ MonoBehaviour:
           typeName: UnityEngine.Playables.PlayableDirector
           value: {fileID: 1459810092}
         fsmVarParams:
-        - variableName: TM_Charge
+        - variableName: 
           objectType: UnityEngine.Playables.PlayableAsset
           useVariable: 1
           type: 12
@@ -2839,7 +2907,7 @@ MonoBehaviour:
           name: HoldFast
           isSystemEvent: 0
           isGlobal: 0
-        toState: Check Charge Is Possible
+        toState: Check Double Charge Is Possible
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -2897,7 +2965,7 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 00000000000000000100000000000000
         paramByteDataSize: 00000000000000000000000001000000
-    - name: Retreat !
+    - name: Retreat B!
       description: 
       colorIndex: 0
       position:
@@ -3065,7 +3133,7 @@ MonoBehaviour:
           typeName: UnityEngine.Playables.PlayableDirector
           value: {fileID: 1981180466}
         fsmVarParams:
-        - variableName: TM_Retreat
+        - variableName: TM_WithoutAdv_Retreat
           objectType: UnityEngine.Playables.PlayableAsset
           useVariable: 1
           type: 12
@@ -3257,7 +3325,7 @@ MonoBehaviour:
           name: Charge
           isSystemEvent: 0
           isGlobal: 0
-        toState: Charge !
+        toState: Charge C!
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -3397,13 +3465,13 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 00000000000000000100000000000000000000000100000002000000030000000100000000000000040000000500000000000000010000000200000002000000
         paramByteDataSize: 00000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000000000000000000000000000001000000
-    - name: Charge !
+    - name: Charge C!
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 398.27344
-        y: 845.5
+        x: 411.64062
+        y: 962.71094
         width: 100
         height: 32
       isBreakpoint: 0
@@ -3587,7 +3655,7 @@ MonoBehaviour:
           typeName: UnityEngine.Playables.PlayableDirector
           value: {fileID: 1431739042}
         fsmVarParams:
-        - variableName: TM_Charge
+        - variableName: TM_Adv_Charge
           objectType: UnityEngine.Playables.PlayableAsset
           useVariable: 1
           type: 12
@@ -3839,8 +3907,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 784.65625
-        y: 779.9922
+        x: 774.08594
+        y: 861.9844
         width: 177.28
         height: 48
       isBreakpoint: 0
@@ -4597,7 +4665,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: UpdateTimelines
+        toState: Check Charge Option 2
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -5101,6 +5169,919 @@ MonoBehaviour:
         - sendToUnityLog
         paramDataPos: 0000000000000000010000000200000003000000000000000400000000000000010000000500000005000000
         paramByteDataSize: 0000000000000000000000000000000000000000000000000000000001000000040000000000000001000000
+    - name: Check Double Charge Is Possible
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 770.0078
+        y: 782.52344
+        width: 221.35
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Double Charge
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Charge B!
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Check Charge Is Possible
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.BoolTest
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: a4c8bf00
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: MayDoubleCharge
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - Double Charge
+        - FINISHED
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 11000000170000001700000001000000
+        paramName:
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 00000000000000000100000000000000
+        paramByteDataSize: 00000000000000000000000001000000
+    - name: Check Charge Chance 2
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 1076.3516
+        y: 864.08594
+        width: 170.36
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: Charge
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Charge B!
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: HoldFast
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Check Charge Is Possible
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetFsmInt
+        - HutongGames.PlayMaker.Actions.RandomInt
+        - HutongGames.PlayMaker.Actions.IntCompare
+        customNames:
+        - 
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 00000000050000000a000000
+        actionHashCodes: 081bbf05070f300009faa102
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: OpponentWithAdvantage
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: ChargeChance
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams:
+        - useVariable: 1
+          name: AdvChargeChance
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 100
+        - useVariable: 1
+          name: RandomIntValue
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: RandomIntValue
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: AdvChargeChance
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - HoldFast
+        - Charge
+        - HoldFast
+        byteData: 000100
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 14000000120000001200000010000000010000001000000010000000100000000100000011000000100000001000000017000000170000001700000001000000
+        paramName:
+        - gameObject
+        - fsmName
+        - variableName
+        - storeValue
+        - everyFrame
+        - min
+        - max
+        - storeResult
+        - inclusiveMax
+        - noRepeat
+        - integer1
+        - integer2
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 00000000000000000100000000000000000000000100000002000000030000000100000000000000040000000500000000000000010000000200000002000000
+        paramByteDataSize: 00000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000000000000000000000000000001000000
+    - name: Charge B!
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 1051.8047
+        y: 989.4844
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Pause 2
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.IntSubtract
+        - HutongGames.PlayMaker.Actions.IntAdd
+        - HutongGames.PlayMaker.Actions.SetFsmInt
+        - HutongGames.PlayMaker.Actions.GetParent
+        - HutongGames.PlayMaker.Actions.SetFsmInt
+        - HutongGames.PlayMaker.Actions.CallMethod
+        - HutongGames.PlayMaker.Actions.SetBoolValue
+        - HutongGames.PlayMaker.Actions.GetName
+        - HutongGames.PlayMaker.Actions.BuildString
+        - HutongGames.PlayMaker.Actions.SetFsmInt
+        - HutongGames.PlayMaker.Actions.DebugLog
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 0100010101010001010001
+        actionIsOpen: 0100010101010101010001
+        actionStartIndex: 0000000004000000070000000c0000000e000000130000001b0000001e00000021000000280000002d000000
+        actionHashCodes: 31e5da02603dd905081bbf05d97b7202081bbf05ca51e90027fbe10371c75a037370ae05081bbf059c59e501
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: OppWithoutAdvProxy
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 1
+          name: OpponentWithoutAdvantage
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: OpponentWithoutAdvantage
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: OpponentWithoutAdvantage
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: OppWithoutAdvProxy
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: OpponentWithAdvantage
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: CurrentZone
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: ZoneToMoveTo
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Play
+        - useVariable: 1
+          name: ObjName
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 1
+          name: ObjName
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Charging
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: ' '
+        - useVariable: 1
+          name: DebugMsg
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: CurrentZone
+        - useVariable: 1
+          name: DebugMsg
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: UnityEngine.Playables.PlayableDirector
+          value: {fileID: 1981180466}
+        fsmVarParams:
+        - variableName: TM_WithoutAdv_Charge
+          objectType: UnityEngine.Playables.PlayableAsset
+          useVariable: 1
+          type: 12
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        - variableName: 
+          objectType: UnityEngine.Playables.DirectorWrapMode
+          useVariable: 0
+          type: 14
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        - variableName: 
+          objectType: 
+          useVariable: 0
+          type: -1
+          floatValue: 0
+          intValue: 0
+          boolValue: 0
+          stringValue: 
+          vector4Value: {x: 0, y: 0, z: 0, w: 0}
+          objectReference: {fileID: 0}
+          arrayValue:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            type: -1
+            objectTypeName: 
+            floatValues: []
+            intValues: 
+            boolValues: 
+            stringValues: []
+            vector4Values: []
+            objectReferences: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams:
+        - useVariable: 1
+          name: OppWithoutAdvZone
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: AdvantageDirection
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: OppWithoutAdvZone
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: AdvantageDirection
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: OppWithoutAdvZone
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: OppWithoutAdvZone
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: OppWithAdvZone
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmBoolParams:
+        - useVariable: 1
+          name: Event_AdvCharged
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 00000000000000000000000000000001
+        arrayParamSizes: 0200000002000000
+        arrayParamTypes:
+        - HutongGames.PlayMaker.FsmVar
+        - HutongGames.PlayMaker.FsmString
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1000000010000000010000000100000010000000100000000100000014000000120000001200000010000000010000001400000013000000140000001200000012000000100000000100000018000000120000000c00000027000000270000002700000001000000010000001100000011000000010000001300000012000000010000000c0000001200000012000000120000001100000012000000010000001400000012000000120000001000000001000000070000001200000001000000
+        paramName:
+        - intVariable
+        - subtract
+        - everyFrame
+        - perSecond
+        - intVariable
+        - add
+        - everyFrame
+        - gameObject
+        - fsmName
+        - variableName
+        - setValue
+        - everyFrame
+        - gameObject
+        - storeResult
+        - gameObject
+        - fsmName
+        - variableName
+        - setValue
+        - everyFrame
+        - behaviour
+        - methodName
+        - parameters
+        - 
+        - 
+        - storeResult
+        - everyFrame
+        - manualUI
+        - boolVariable
+        - boolValue
+        - everyFrame
+        - gameObject
+        - storeName
+        - everyFrame
+        - stringParts
+        - 
+        - 
+        - separator
+        - addToEnd
+        - storeResult
+        - everyFrame
+        - gameObject
+        - fsmName
+        - variableName
+        - setValue
+        - everyFrame
+        - logLevel
+        - text
+        - sendToUnityLog
+        paramDataPos: 00000000010000000000000001000000020000000300000002000000000000000000000001000000040000000300000001000000000000000200000002000000030000000500000004000000000000000400000000000000000000000100000002000000050000000600000000000000010000000700000001000000050000000800000001000000060000000700000008000000020000000900000009000000030000000a0000000b000000060000000a0000000b0000000c0000000f000000
+        paramByteDataSize: 000000000000000001000000010000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000100000001000000000000000000000001000000000000000000000001000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000001000000040000000000000001000000
+    - name: Check Charge Option 2
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 770.5156
+        y: 216.41406
+        width: 164.92
+        height: 48
+      isBreakpoint: 0
+      isSequence: 1
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: UpdateTimelines
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Double Charge
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Set Double Charge
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetBoolValue
+        - HutongGames.PlayMaker.Actions.IntOperator
+        - HutongGames.PlayMaker.Actions.IntCompare
+        customNames:
+        - 
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000300000008000000
+        actionHashCodes: 27fbe1031418090309faa102
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams:
+        - useVariable: 1
+          name: OppWithAdvZone
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: OppWithoutAdvZone
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: ZoneMultiply
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: ZoneMultiply
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 3
+        fsmBoolParams:
+        - useVariable: 1
+          name: MayDoubleCharge
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - Double Charge
+        - FINISHED
+        - FINISHED
+        byteData: 00020000000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1100000011000000010000001000000010000000070000001000000001000000100000001000000017000000170000001700000001000000
+        paramName:
+        - boolVariable
+        - boolValue
+        - everyFrame
+        - integer1
+        - integer2
+        - operation
+        - storeResult
+        - everyFrame
+        - integer1
+        - integer2
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 0000000001000000000000000000000001000000010000000200000005000000030000000400000000000000010000000200000006000000
+        paramByteDataSize: 0000000000000000010000000000000000000000040000000000000001000000000000000000000000000000000000000000000001000000
+    - name: Set Double Charge
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 967.0078
+        y: 265.33594
+        width: 138.8
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: UpdateTimelines
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetBoolValue
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 27fbe103
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: MayDoubleCharge
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 110000001100000001000000
+        paramName:
+        - boolVariable
+        - boolValue
+        - everyFrame
+        paramDataPos: 000000000100000000000000
+        paramByteDataSize: 000000000000000001000000
+    - name: Pause 2
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 747.8672
+        y: 1037.1406
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Charge C!
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.NextFrameEvent
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 88611604
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - FINISHED
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 17000000
+        paramName:
+        - sendEvent
+        paramDataPos: 00000000
+        paramByteDataSize: 00000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -5150,6 +6131,9 @@ MonoBehaviour:
     - name: MoveEvent
       isSystemEvent: 0
       isGlobal: 0
+    - name: Double Charge
+      isSystemEvent: 0
+      isGlobal: 0
     globalTransitions: []
     variables:
       floatVariables: []
@@ -5196,6 +6180,12 @@ MonoBehaviour:
         showInInspector: 0
         networkSync: 0
         value: 0
+      - useVariable: 1
+        name: ZoneMultiply
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       boolVariables:
       - useVariable: 1
         name: AdvMayCharge
@@ -5235,6 +6225,12 @@ MonoBehaviour:
         value: 0
       - useVariable: 1
         name: WithoutAdvMayRetreat
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: MayDoubleCharge
         tooltip: 
         showInInspector: 0
         networkSync: 0
@@ -5298,28 +6294,14 @@ MonoBehaviour:
         typeName: UnityEngine.GameObject
         value: {fileID: 1634963720}
       - useVariable: 1
-        name: TM_ZeroDiffMelee
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        typeName: UnityEngine.Playables.PlayableAsset
-        value: {fileID: 11400000, guid: 7e83336913db4c34099c51bb1a0bb303, type: 2}
-      - useVariable: 1
-        name: TM_Special_1
+        name: TM_Adv_Charge
         tooltip: 
         showInInspector: 0
         networkSync: 0
         typeName: UnityEngine.Playables.PlayableAsset
         value: {fileID: 0}
       - useVariable: 1
-        name: TM_Retreat
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        typeName: UnityEngine.Playables.PlayableAsset
-        value: {fileID: 0}
-      - useVariable: 1
-        name: TM_OneDiffMidRange
+        name: TM_Adv_Retreat
         tooltip: 
         showInInspector: 0
         networkSync: 0
@@ -5333,19 +6315,47 @@ MonoBehaviour:
         typeName: UnityEngine.Playables.PlayableAsset
         value: {fileID: 0}
       - useVariable: 1
-        name: TM_Charge
+        name: TM_OneDiffMidRange
         tooltip: 
         showInInspector: 0
         networkSync: 0
         typeName: UnityEngine.Playables.PlayableAsset
         value: {fileID: 0}
+      - useVariable: 1
+        name: TM_Special_1
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        typeName: UnityEngine.Playables.PlayableAsset
+        value: {fileID: 0}
+      - useVariable: 1
+        name: TM_WithoutAdv_Charge
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        typeName: UnityEngine.Playables.PlayableAsset
+        value: {fileID: 0}
+      - useVariable: 1
+        name: TM_WithoutAdv_Retreat
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        typeName: UnityEngine.Playables.PlayableAsset
+        value: {fileID: 0}
+      - useVariable: 1
+        name: TM_ZeroDiffMelee
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        typeName: UnityEngine.Playables.PlayableAsset
+        value: {fileID: 11400000, guid: 7e83336913db4c34099c51bb1a0bb303, type: 2}
       materialVariables: []
       textureVariables: []
       arrayVariables: []
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -6182,7 +7192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6751597294527081243, guid: 5e9dd6c264ae2644eacc2f9f68f0cffe, type: 3}
       propertyPath: fsm.variables.intVariables.Array.data[0].value
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6751597294527081243, guid: 5e9dd6c264ae2644eacc2f9f68f0cffe, type: 3}
       propertyPath: fsm.variables.intVariables.Array.data[1].value
@@ -6815,7 +7825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6751597294527081243, guid: 5e9dd6c264ae2644eacc2f9f68f0cffe, type: 3}
       propertyPath: fsm.variables.intVariables.Array.data[0].value
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6751597294527081243, guid: 5e9dd6c264ae2644eacc2f9f68f0cffe, type: 3}
       propertyPath: fsm.variables.intVariables.Array.data[1].value

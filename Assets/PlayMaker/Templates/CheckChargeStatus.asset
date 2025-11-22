@@ -1240,7 +1240,7 @@ MonoBehaviour:
           name: Zone2
           isSystemEvent: 0
           isGlobal: 0
-        toState: End
+        toState: B Z3 4
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
