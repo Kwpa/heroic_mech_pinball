@@ -330,4 +330,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64a7eed0cf5e76b4d8ac5ff5a3dfc52c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoosterPad
-  force: 200
+  force: 100

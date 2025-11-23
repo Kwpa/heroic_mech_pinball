@@ -3,11 +3,15 @@ using UnityEngine.UIElements;
 
 public class Pinball : MonoBehaviour
 {
-    [SerializeField] private Transform plungerPos;
+    private Vector3 plungerPos;
 
-
-    public void DisableBall()
+    private void Start()
     {
+        plungerPos = transform.position;
+    }
 
+    public void ResetBallPos()
+    {
+        transform.position = plungerPos;
     }
 }
