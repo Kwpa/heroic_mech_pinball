@@ -39,3 +39,4 @@ MonoBehaviour:
   - Player Receives Damage
   - SetTriggeredStatus
   - InstantiateDebugPanelElement
+  - Take Damage
