@@ -316,7 +316,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.5, y: 2, z: 20}
+  m_Size: {x: 1, y: 2, z: 20}
   m_Center: {x: 0, y: 1.5808206e-15, z: -8.149869}
 --- !u!114 &6069455757201508421
 MonoBehaviour:
@@ -330,4 +330,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64a7eed0cf5e76b4d8ac5ff5a3dfc52c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoosterPad
-  force: 100
+  force: 40
