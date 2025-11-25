@@ -40,3 +40,4 @@ MonoBehaviour:
   - SetTriggeredStatus
   - InstantiateDebugPanelElement
   - Take Damage
+  - Opponent Defeated
