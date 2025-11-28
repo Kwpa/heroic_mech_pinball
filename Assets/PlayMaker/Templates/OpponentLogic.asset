@@ -61,7 +61,7 @@ MonoBehaviour:
         - ownerOption: 1
           gameObject:
             useVariable: 1
-            name: Enemy
+            name: Laser
             tooltip: 
             showInInspector: 1
             networkSync: 0
@@ -169,7 +169,7 @@ MonoBehaviour:
         - useVariable: 1
           name: TM_TwoDiff_LongRange
           tooltip: 
-          showInInspector: 1
+          showInInspector: 0
           networkSync: 0
           typeName: UnityEngine.Playables.PlayableAsset
           value: {fileID: 0}
@@ -183,7 +183,7 @@ MonoBehaviour:
         - useVariable: 1
           name: TM_OneDiffMidRange
           tooltip: 
-          showInInspector: 1
+          showInInspector: 0
           networkSync: 0
           typeName: UnityEngine.Playables.PlayableAsset
           value: {fileID: 0}
@@ -294,7 +294,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: IncomingMaxDamage
+          value: Damage
         fsmObjectParams: []
         fsmVarParams:
         - variableName: IncomingID
@@ -321,7 +321,7 @@ MonoBehaviour:
             stringValues: []
             vector4Values: []
             objectReferences: []
-        - variableName: IncomingMaxDamage
+        - variableName: 
           objectType: UnityEngine.Object
           useVariable: 1
           type: 1
@@ -450,7 +450,7 @@ MonoBehaviour:
           networkSync: 0
           value: 100
         - useVariable: 1
-          name: IncomingMaxDamage
+          name: IncomingDamage
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -505,7 +505,7 @@ MonoBehaviour:
         y: 204
         width: 115.96
         height: 32
-      isBreakpoint: 1
+      isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
@@ -586,7 +586,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: IncomingMaxDamage
+          value: Damage
         fsmObjectParams: []
         fsmVarParams:
         - variableName: OpponentId
@@ -943,7 +943,7 @@ MonoBehaviour:
           networkSync: 0
           value: 100
         - useVariable: 1
-          name: IncomingMaxDamage
+          name: IncomingDamage
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -1459,19 +1459,13 @@ MonoBehaviour:
         networkSync: 0
         value: 0
       - useVariable: 1
+        name: IncomingDamage
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
         name: IncomingID
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: 0
-      - useVariable: 1
-        name: IncomingMaxDamage
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: 0
-      - useVariable: 1
-        name: IncomingMinDamage
         tooltip: 
         showInInspector: 0
         networkSync: 0
@@ -1574,6 +1568,12 @@ MonoBehaviour:
         showInInspector: 1
         networkSync: 0
         value: {fileID: 0}
+      - useVariable: 1
+        name: Laser
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: {fileID: 0}
       objectVariables:
       - useVariable: 1
         name: TM_Charge
@@ -1592,14 +1592,14 @@ MonoBehaviour:
       - useVariable: 1
         name: TM_OneDiffMelee
         tooltip: 
-        showInInspector: 1
+        showInInspector: 0
         networkSync: 0
         typeName: UnityEngine.Playables.PlayableAsset
         value: {fileID: 0}
       - useVariable: 1
         name: TM_OneDiffMidRange
         tooltip: 
-        showInInspector: 1
+        showInInspector: 0
         networkSync: 0
         typeName: UnityEngine.Playables.PlayableAsset
         value: {fileID: 0}
@@ -1627,7 +1627,7 @@ MonoBehaviour:
       - useVariable: 1
         name: TM_TwoDiff_LongRange
         tooltip: 
-        showInInspector: 1
+        showInInspector: 0
         networkSync: 0
         typeName: UnityEngine.Playables.PlayableAsset
         value: {fileID: 0}
@@ -1641,7 +1641,7 @@ MonoBehaviour:
       - useVariable: 1
         name: TM_ZeroDiffShortRange
         tooltip: 
-        showInInspector: 1
+        showInInspector: 0
         networkSync: 0
         typeName: UnityEngine.Playables.PlayableAsset
         value: {fileID: 0}
@@ -1667,7 +1667,7 @@ MonoBehaviour:
       - 
       - Attacks
       - Damage
-      variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000200000002000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000001000000010000000100000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 000000000000000000000000000000000000000000000000020000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000100000001000000010000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0

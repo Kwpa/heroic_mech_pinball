@@ -1545,6 +1545,12 @@ MonoBehaviour:
         showInInspector: 1
         networkSync: 0
         value: {fileID: 1071492830086062775}
+      - useVariable: 1
+        name: Laser
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: {fileID: 7256687902243033928}
       objectVariables:
       - useVariable: 1
         name: 
@@ -1645,18 +1651,18 @@ MonoBehaviour:
         typeName: UnityEngine.Playables.PlayableAsset
         value: {fileID: 0}
       - useVariable: 1
-        name: TM_OneDiffMelee
+        name: 
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        typeName: UnityEngine.Playables.PlayableAsset
+        typeName: 
         value: {fileID: 0}
       - useVariable: 1
-        name: TM_OneDiffMidRange
+        name: 
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        typeName: UnityEngine.Playables.PlayableAsset
+        typeName: 
         value: {fileID: 0}
       - useVariable: 1
         name: TM_ReceiveDamage
@@ -1694,11 +1700,11 @@ MonoBehaviour:
         typeName: 
         value: {fileID: 0}
       - useVariable: 1
-        name: TM_TwoDiff_LongRange
+        name: 
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        typeName: UnityEngine.Playables.PlayableAsset
+        typeName: 
         value: {fileID: 0}
       - useVariable: 1
         name: 
@@ -1708,11 +1714,11 @@ MonoBehaviour:
         typeName: 
         value: {fileID: 0}
       - useVariable: 1
-        name: TM_ZeroDiffShortRange
+        name: 
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        typeName: UnityEngine.Playables.PlayableAsset
+        typeName: 
         value: {fileID: 0}
       - useVariable: 1
         name: TM_Intro
@@ -1749,7 +1755,7 @@ MonoBehaviour:
       - 
       - Attacks
       - Damage
-      variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000010000000100000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000001000000010000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -1838,6 +1844,18 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
+        - m_Target: {fileID: 2576159677924239917}
+          m_TargetAssemblyTypeName: PlayMakerFSM, PlayMaker
+          m_MethodName: SendEvent
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Set Attack
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 6751597294527081243}
           m_TargetAssemblyTypeName: PlayMakerFSM, PlayMaker
           m_MethodName: SendEvent
