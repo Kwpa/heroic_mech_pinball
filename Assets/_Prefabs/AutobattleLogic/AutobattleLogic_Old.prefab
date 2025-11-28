@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 173846263094848234}
   - component: {fileID: 2183773676099913560}
   m_Layer: 0
-  m_Name: AutobattleLogic
+  m_Name: AutobattleLogic_Old
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

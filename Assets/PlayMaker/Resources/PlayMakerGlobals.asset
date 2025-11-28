@@ -41,3 +41,8 @@ MonoBehaviour:
   - InstantiateDebugPanelElement
   - Take Damage
   - Opponent Defeated
+  - ExceedProtocol
+  - Exceed Protocol
+  - Begin Laser Extend
+  - End Laser Extend
+  - Protocol
