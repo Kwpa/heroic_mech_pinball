@@ -506,7 +506,7 @@ MonoBehaviour:
         width: 115.96
         height: 32
       isBreakpoint: 0
-      isSequence: 0
+      isSequence: 1
       hideUnused: 0
       transitions:
       - fsmEvent:
@@ -520,6 +520,7 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.Wait
         - HutongGames.PlayMaker.Actions.RandomInt
         - HutongGames.PlayMaker.Actions.SetIntValue
         - HutongGames.PlayMaker.Actions.SetEventProperties
@@ -529,10 +530,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 01000101
-        actionIsOpen: 01000101
-        actionStartIndex: 0000000005000000080000000e000000
-        actionHashCodes: 070f3000603dd905afffe3005e69bb04
+        - 
+        actionEnabled: 0101000101
+        actionIsOpen: 0101000101
+        actionStartIndex: 0000000003000000080000000b00000011000000
+        actionHashCodes: 48c01101070f3000603dd905afffe3005e69bb04
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -646,6 +648,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0.1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.1
         fsmIntParams:
         - useVariable: 1
           name: MinDamage
@@ -690,16 +698,20 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
+        - 
         - Take Damage
-        byteData: 010000
+        byteData: 00010000
         arrayParamSizes: 0200000002000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmString
         - HutongGames.PlayMaker.FsmVar
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 10000000100000001000000001000000110000001000000010000000010000000c00000012000000120000000c00000027000000270000001f000000170000000f00000001000000
+        paramDataType: 0f000000170000000100000010000000100000001000000001000000110000001000000010000000010000000c00000012000000120000000c00000027000000270000001f000000170000000f00000001000000
         paramName:
+        - time
+        - finishEvent
+        - realTime
         - min
         - max
         - storeResult
@@ -718,8 +730,8 @@ MonoBehaviour:
         - sendEvent
         - delay
         - everyFrame
-        paramDataPos: 000000000100000002000000000000000000000003000000040000000100000000000000000000000100000001000000000000000100000000000000000000000000000002000000
-        paramByteDataSize: 000000000000000000000000010000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000001000000
+        paramDataPos: 000000000000000000000000000000000100000002000000010000000000000003000000040000000200000000000000000000000100000001000000000000000100000000000000010000000100000003000000
+        paramByteDataSize: 000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000001000000
     - name: Send Defeated
       description: 
       colorIndex: 0
@@ -1180,17 +1192,17 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.IntSubtract
         - HutongGames.PlayMaker.Actions.IntCompare
         - HutongGames.PlayMaker.Actions.RandomInt
-        - HutongGames.PlayMaker.Actions.IntSubtract
         customNames:
         - 
         - 
         - 
         actionEnabled: 010101
         actionIsOpen: 010101
-        actionStartIndex: 00000000060000000b000000
-        actionHashCodes: 09faa102070f300031e5da02
+        actionStartIndex: 00000000040000000a000000
+        actionHashCodes: 31e5da0209faa102070f3000
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -1207,6 +1219,18 @@ MonoBehaviour:
         fsmEnumParams: []
         fsmFloatParams: []
         fsmIntParams:
+        - useVariable: 1
+          name: NumberOfHits
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         - useVariable: 1
           name: NumberOfHits
           tooltip: 
@@ -1237,18 +1261,6 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        - useVariable: 1
-          name: NumberOfHits
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
         fsmBoolParams:
         - useVariable: 0
           name: 
@@ -1262,16 +1274,20 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - 
         - Attack Again
         - 
-        byteData: 00010000
+        - Attack Again
+        byteData: 00000001
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 100000001000000017000000170000001700000001000000100000001000000010000000010000001100000010000000100000000100000001000000
+        paramDataType: 100000001000000001000000010000001000000010000000170000001700000017000000010000001000000010000000100000000100000011000000
         paramName:
+        - intVariable
+        - subtract
+        - everyFrame
+        - perSecond
         - integer1
         - integer2
         - equal
@@ -1283,12 +1299,8 @@ MonoBehaviour:
         - storeResult
         - inclusiveMax
         - noRepeat
-        - intVariable
-        - subtract
-        - everyFrame
-        - perSecond
-        paramDataPos: 000000000100000000000000010000000200000000000000020000000300000004000000010000000000000005000000060000000200000003000000
-        paramByteDataSize: 000000000000000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000001000000
+        paramDataPos: 000000000100000000000000010000000200000003000000000000000100000002000000020000000400000005000000060000000300000000000000
+        paramByteDataSize: 000000000000000001000000010000000000000000000000000000000000000000000000010000000000000000000000000000000100000000000000
     - name: Random Wait
       description: 
       colorIndex: 0
@@ -1340,13 +1352,13 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0.4
+          value: 0.1
         - useVariable: 0
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0.7
+          value: 0.3
         fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
