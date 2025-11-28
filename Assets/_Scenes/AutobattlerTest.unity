@@ -390,7 +390,7 @@ PrefabInstance:
     - target: {fileID: 6751597294527081243, guid: 5e9dd6c264ae2644eacc2f9f68f0cffe, type: 3}
       propertyPath: fsm.variables.objectVariables.Array.data[21].value
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: a40d59aff198eed498d4463f1b33ceca, type: 2}
     - target: {fileID: 6751597294527081243, guid: 5e9dd6c264ae2644eacc2f9f68f0cffe, type: 3}
       propertyPath: fsm.variables.gameObjectVariables.Array.data[0].value
       value: 
@@ -3977,7 +3977,7 @@ PrefabInstance:
     - target: {fileID: 5824423261466347015, guid: 6cb3cb4828f98f842869cca693f67087, type: 3}
       propertyPath: m_PlayableAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 9e6fc354ca80419458b3b1524e691e17, type: 2}
+      objectReference: {fileID: 11400000, guid: 6b5e724abdd145d4b9e9f57452ef7b92, type: 2}
     - target: {fileID: 5824423261466347015, guid: 6cb3cb4828f98f842869cca693f67087, type: 3}
       propertyPath: m_SceneBindings.Array.size
       value: 42
@@ -9967,15 +9967,17 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.BlockEvents
         - HutongGames.PlayMaker.Actions.GetEventProperties
         - HutongGames.PlayMaker.Actions.IntSwitch
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000006000000
-        actionHashCodes: afffe300092dca00
+        - 
+        actionEnabled: 000101
+        actionIsOpen: 000101
+        actionStartIndex: 00000000050000000b000000
+        actionHashCodes: 6a56e905afffe300092dca00
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -10050,7 +10052,13 @@ MonoBehaviour:
             objectReferences: []
         fsmArrayParams: []
         fsmEnumParams: []
-        fsmFloatParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         fsmIntParams:
         - useVariable: 1
           name: AdvantageId
@@ -10070,16 +10078,29 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        fsmBoolParams: []
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
+        - 
         - Defeated
         - Win
-        byteData: 00
+        byteData: 0000000000
         arrayParamSizes: 02000000020000000200000002000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmString
@@ -10088,8 +10109,13 @@ MonoBehaviour:
         - HutongGames.PlayMaker.FsmEvent
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0c00000012000000120000000c0000002700000027000000100000000c00000010000000100000000c000000170000001700000001000000
+        paramDataType: 070000000f0000001100000017000000110000000c00000012000000120000000c0000002700000027000000100000000c00000010000000100000000c000000170000001700000001000000
         paramName:
+        - condition
+        - floatParam
+        - boolParam
+        - eventParam
+        - logBlockedEvents
         - keys
         - 
         - 
@@ -10104,8 +10130,8 @@ MonoBehaviour:
         - 
         - 
         - everyFrame
-        paramDataPos: 0000000000000000010000000100000000000000010000000000000002000000010000000200000003000000000000000100000000000000
-        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000
+        paramDataPos: 00000000000000000000000000000000010000000000000000000000010000000100000000000000010000000000000002000000010000000200000003000000010000000200000004000000
+        paramByteDataSize: 04000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000
     - name: Defeated 2
       description: 
       colorIndex: 0
@@ -11383,7 +11409,7 @@ PrefabInstance:
     - target: {fileID: 6751597294527081243, guid: 5e9dd6c264ae2644eacc2f9f68f0cffe, type: 3}
       propertyPath: fsm.variables.objectVariables.Array.data[21].value
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: a40d59aff198eed498d4463f1b33ceca, type: 2}
     - target: {fileID: 6751597294527081243, guid: 5e9dd6c264ae2644eacc2f9f68f0cffe, type: 3}
       propertyPath: fsm.variables.objectVariables.Array.data[25].value
       value: 

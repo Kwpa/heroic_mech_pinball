@@ -257,7 +257,7 @@ MonoBehaviour:
           name: ID Success
           isSystemEvent: 0
           isGlobal: 0
-        toState: Take Damage
+        toState: Testdefeated
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -321,7 +321,7 @@ MonoBehaviour:
             stringValues: []
             vector4Values: []
             objectReferences: []
-        - variableName: 
+        - variableName: IncomingDamage
           objectType: UnityEngine.Object
           useVariable: 1
           type: 1
@@ -749,13 +749,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetEventProperties
         - HutongGames.PlayMaker.Actions.SendEvent
+        - HutongGames.PlayMaker.Actions.SetBoolValue
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000006000000
-        actionHashCodes: afffe3005e69bb04
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 00000000060000000a000000
+        actionHashCodes: afffe3005e69bb0427fbe103
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -870,7 +872,19 @@ MonoBehaviour:
           networkSync: 0
           value: 0.1
         fsmIntParams: []
-        fsmBoolParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: Defeated
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -878,14 +892,14 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - Opponent Defeated
-        byteData: 00
+        byteData: 0000
         arrayParamSizes: 0200000002000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmString
         - HutongGames.PlayMaker.FsmVar
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0c00000012000000120000000c00000027000000270000001f000000170000000f00000001000000
+        paramDataType: 0c00000012000000120000000c00000027000000270000001f000000170000000f00000001000000110000001100000001000000
         paramName:
         - keys
         - 
@@ -897,8 +911,11 @@ MonoBehaviour:
         - sendEvent
         - delay
         - everyFrame
-        paramDataPos: 00000000000000000100000001000000000000000100000000000000000000000000000000000000
-        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000001000000
+        - boolVariable
+        - boolValue
+        - everyFrame
+        paramDataPos: 00000000000000000100000001000000000000000100000000000000000000000000000000000000000000000100000001000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000001000000
     - name: Take Damage 2
       description: 
       colorIndex: 0
@@ -1194,15 +1211,13 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.IntSubtract
         - HutongGames.PlayMaker.Actions.IntCompare
-        - HutongGames.PlayMaker.Actions.RandomInt
         customNames:
         - 
         - 
-        - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 00000000040000000a000000
-        actionHashCodes: 31e5da0209faa102070f3000
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000004000000
+        actionHashCodes: 31e5da0209faa102
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -1243,31 +1258,7 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 1
-        - useVariable: 1
-          name: MinDamage
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 1
-          name: MaxDamage
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 1
-          name: NextDamage
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        fsmBoolParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
+        fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -1277,12 +1268,12 @@ MonoBehaviour:
         - Attack Again
         - 
         - Attack Again
-        byteData: 00000001
+        byteData: 000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 100000001000000001000000010000001000000010000000170000001700000017000000010000001000000010000000100000000100000011000000
+        paramDataType: 10000000100000000100000001000000100000001000000017000000170000001700000001000000
         paramName:
         - intVariable
         - subtract
@@ -1294,13 +1285,8 @@ MonoBehaviour:
         - lessThan
         - greaterThan
         - everyFrame
-        - min
-        - max
-        - storeResult
-        - inclusiveMax
-        - noRepeat
-        paramDataPos: 000000000100000000000000010000000200000003000000000000000100000002000000020000000400000005000000060000000300000000000000
-        paramByteDataSize: 000000000000000001000000010000000000000000000000000000000000000000000000010000000000000000000000000000000100000000000000
+        paramDataPos: 00000000010000000000000001000000020000000300000000000000010000000200000002000000
+        paramByteDataSize: 00000000000000000100000001000000000000000000000000000000000000000000000001000000
     - name: Random Wait
       description: 
       colorIndex: 0
@@ -1381,6 +1367,81 @@ MonoBehaviour:
         - realTime
         paramDataPos: 00000000010000000000000000000000
         paramByteDataSize: 00000000000000000000000001000000
+    - name: Testdefeated
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 411.33594
+        y: 53.382812
+        width: 107.29
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: NotDefeated
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Take Damage
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.BoolTest
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: a4c8bf00
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: Defeated
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - 
+        - NotDefeated
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 11000000170000001700000001000000
+        paramName:
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 00000000000000000100000000000000
+        paramByteDataSize: 00000000000000000000000001000000
     events:
     - name: Take Damage
       isSystemEvent: 0
@@ -1410,6 +1471,9 @@ MonoBehaviour:
       isSystemEvent: 1
       isGlobal: 0
     - name: Attack Again
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: NotDefeated
       isSystemEvent: 0
       isGlobal: 0
     globalTransitions:
