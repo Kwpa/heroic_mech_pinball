@@ -8324,6 +8324,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf13bb46f811b0442b9f12c9474fae9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ExitRamp
+  exitedRail:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &390460603
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16052,6 +16055,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bfc4a8ab8ffb654d915d94a4c6da5f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnterRamp
+  enteredRail:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 390460602}
+        m_TargetAssemblyTypeName: ExitRamp, Assembly-CSharp
+        m_MethodName: OnRailEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1246980720
 BoxCollider:
   m_ObjectHideFlags: 0

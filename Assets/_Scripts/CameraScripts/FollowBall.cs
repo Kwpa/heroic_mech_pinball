@@ -23,30 +23,24 @@ public class FollowBall : MonoBehaviour
         yPos = transform.position.y;
 
         zOffset = transform.position.z - ball.position.z;
-
-        Debug.Log(zOffset);
     }
 
     // Update is called once per frame
     void Update()
     {
         float ballPos = ball.position.z + zOffset;
-        Debug.Log(ballPos);
 
         //determine z position
         if (ballPos > maxZPos)
         {
-            Debug.Log("in max pos");
             zPos = maxZPos;
         }
         else if (ballPos < minZPos)
         {
-            Debug.Log("in min pos");
             zPos = minZPos;
         }
         else
         {
-            Debug.Log("in regular case");
             zPos = ballPos;
         }
 
