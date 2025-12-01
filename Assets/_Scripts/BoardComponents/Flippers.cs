@@ -38,8 +38,6 @@ public class Flippers : MonoBehaviour
 
     private void ToggleFlipper(InputAction.CallbackContext context)
     {
-        Debug.Log("Toggle flippers called");
-        Debug.Log(context.canceled);
 
         if (context.canceled)
         {
@@ -47,7 +45,6 @@ public class Flippers : MonoBehaviour
         }
         else
         {
-            Debug.Log("Activating");
             SetSpring(activatedPos);
         }
     }

@@ -8,9 +8,7 @@ public class ExitRamp : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!railEntered) return;
-
-        if (other.gameObject.CompareTag("Ball"))
+        if (other.gameObject.CompareTag("Ball") && railEntered)
         {
             exitedRail.Invoke();
             railEntered = false;
