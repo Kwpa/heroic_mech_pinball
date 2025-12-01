@@ -509,7 +509,7 @@ MonoBehaviour:
         width: 152.95
         height: 32
       isBreakpoint: 0
-      isSequence: 0
+      isSequence: 1
       hideUnused: 0
       transitions:
       - fsmEvent:
@@ -584,7 +584,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: 0.1
         fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
@@ -617,7 +617,7 @@ MonoBehaviour:
         width: 149.94
         height: 32
       isBreakpoint: 0
-      isSequence: 0
+      isSequence: 1
       hideUnused: 0
       transitions:
       - fsmEvent:
@@ -692,7 +692,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: 0.1
         fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
@@ -725,7 +725,7 @@ MonoBehaviour:
         width: 150.55
         height: 32
       isBreakpoint: 0
-      isSequence: 0
+      isSequence: 1
       hideUnused: 0
       transitions:
       - fsmEvent:
@@ -800,7 +800,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: 0.1
         fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
