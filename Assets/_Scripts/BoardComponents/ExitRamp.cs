@@ -1,16 +1,23 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ExitRamp : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public UnityEvent exitedRail;
+    private bool railEntered = false;
+
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.gameObject.CompareTag("Ball") && railEntered)
+        {
+            exitedRail.Invoke();
+            railEntered = false;
+            Debug.Log("Rail Exited");
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnRailEntered()
     {
-        
+        railEntered = true;
     }
 }

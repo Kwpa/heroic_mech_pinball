@@ -33,7 +33,6 @@ public class BoosterPad : MonoBehaviour
     {
         foreach (Rigidbody rb in ballRBs)
         {
-            Debug.Log("AddingForce");
             rb.AddForce(forceDir * force, ForceMode.Force);
         }
     }

@@ -1,16 +1,27 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EnterRamp : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public UnityEvent enteredRail;
+    private bool active;
+
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.gameObject.CompareTag("Ball") && active)
+        {
+            enteredRail.Invoke();
+            Debug.Log("Rail Entered");
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ActivateRail()
     {
-        
+        active = true;
+    }
+
+    public void DisableRail()
+    {
+        active = false;
     }
 }
