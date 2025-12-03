@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2b0a015d93e574bc8bda405f307e1118
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 102638
+  packageName: Ara Trails
+  packageVersion: 1.5.3
+  assetPath: Assets/AraTrail/SampleScenes/QuadMapping.unity
+  uploadId: 602908

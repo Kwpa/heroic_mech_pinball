@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b16c6d37fc384436fb22de479ad03f8f
+timeCreated: 1509357242
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 102638
+  packageName: Ara Trails
+  packageVersion: 1.5.3
+  assetPath: Assets/AraTrail/SampleScenes/SwordTrail.unity
+  uploadId: 602908

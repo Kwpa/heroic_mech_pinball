@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f9b919fee107244b0871b805e673722a
+timeCreated: 1508487320
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 102638
+  packageName: Ara Trails
+  packageVersion: 1.5.3
+  assetPath: Assets/AraTrail/SampleScenes/Materials/TireTracks.shader
+  uploadId: 602908

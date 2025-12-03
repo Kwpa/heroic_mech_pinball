@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d5d16495757c24bbba3f048fd9a7bf75
+timeCreated: 1507403375
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 102638
+  packageName: Ara Trails
+  packageVersion: 1.5.3
+  assetPath: Assets/AraTrail/SampleScenes/DrawOrder.unity
+  uploadId: 602908

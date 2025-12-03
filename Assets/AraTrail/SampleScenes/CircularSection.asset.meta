@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 893e6e1ea61c040bb8add854619b092f
+timeCreated: 1548853667
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 102638
+  packageName: Ara Trails
+  packageVersion: 1.5.3
+  assetPath: Assets/AraTrail/SampleScenes/CircularSection.asset
+  uploadId: 602908

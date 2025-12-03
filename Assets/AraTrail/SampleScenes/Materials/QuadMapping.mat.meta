@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: dc92901c02f7a481daa0c00f6ab298ac
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 102638
+  packageName: Ara Trails
+  packageVersion: 1.5.3
+  assetPath: Assets/AraTrail/SampleScenes/Materials/QuadMapping.mat
+  uploadId: 602908

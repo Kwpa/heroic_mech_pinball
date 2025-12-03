@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c48a2b568a77749a4ba85368a10a916f
+timeCreated: 1509357242
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 102638
+  packageName: Ara Trails
+  packageVersion: 1.5.3
+  assetPath: Assets/AraTrail/SampleScenes/CustomShapes.unity
+  uploadId: 602908
