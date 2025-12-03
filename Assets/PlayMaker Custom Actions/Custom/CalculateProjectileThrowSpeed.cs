@@ -77,8 +77,7 @@ namespace HutongGames.PlayMaker.Actions
      // so xz = v0xz * t => v0xz = xz / t
      // and y = v0y * t - 1/2 * gravity * t * t => v0y * t = y + 1/2 * gravity * t * t => v0y = y / t + 1/2 * gravity * t
 		    float t = timeToTarget;
-			float grav = 9.81f; 
-		    float v0y = y / t + 0.5f * grav * t; // Physics.gravity.magnitude * t;
+		    float v0y = y / t + 0.5f * Physics.gravity.magnitude * t;
 		    float v0xz = xz / t;
 		    
      // create result vector for calculated starting speeds
