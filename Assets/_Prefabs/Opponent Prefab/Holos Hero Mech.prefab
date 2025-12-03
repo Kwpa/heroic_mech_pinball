@@ -2231,7 +2231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7546963671175497137, guid: 2ea6ea286bbb90944b9db1c4f213bd5a, type: 3}
       propertyPath: m_Effectors.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7546963671175497137, guid: 2ea6ea286bbb90944b9db1c4f213bd5a, type: 3}
       propertyPath: m_Effectors.Array.data[2].m_Visible
@@ -2239,6 +2239,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7546963671175497137, guid: 2ea6ea286bbb90944b9db1c4f213bd5a, type: 3}
       propertyPath: m_Effectors.Array.data[3].m_Visible
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546963671175497137, guid: 2ea6ea286bbb90944b9db1c4f213bd5a, type: 3}
+      propertyPath: m_Effectors.Array.data[4].m_Visible
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7546963671175497137, guid: 2ea6ea286bbb90944b9db1c4f213bd5a, type: 3}
@@ -2250,6 +2254,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 221204331896449668}
     - target: {fileID: 7546963671175497137, guid: 2ea6ea286bbb90944b9db1c4f213bd5a, type: 3}
+      propertyPath: m_Effectors.Array.data[4].m_Transform
+      value: 
+      objectReference: {fileID: 4048728943364745568}
+    - target: {fileID: 7546963671175497137, guid: 2ea6ea286bbb90944b9db1c4f213bd5a, type: 3}
       propertyPath: m_Effectors.Array.data[2].m_Style.size
       value: 1
       objectReference: {fileID: 0}
@@ -2258,11 +2266,19 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7546963671175497137, guid: 2ea6ea286bbb90944b9db1c4f213bd5a, type: 3}
+      propertyPath: m_Effectors.Array.data[4].m_Style.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546963671175497137, guid: 2ea6ea286bbb90944b9db1c4f213bd5a, type: 3}
       propertyPath: m_Effectors.Array.data[2].m_Style.shape
       value: 
       objectReference: {fileID: 4300000, guid: e050c2b16fe384bd994474655a4b4968, type: 2}
     - target: {fileID: 7546963671175497137, guid: 2ea6ea286bbb90944b9db1c4f213bd5a, type: 3}
       propertyPath: m_Effectors.Array.data[3].m_Style.shape
+      value: 
+      objectReference: {fileID: 4300000, guid: e050c2b16fe384bd994474655a4b4968, type: 2}
+    - target: {fileID: 7546963671175497137, guid: 2ea6ea286bbb90944b9db1c4f213bd5a, type: 3}
+      propertyPath: m_Effectors.Array.data[4].m_Style.shape
       value: 
       objectReference: {fileID: 4300000, guid: e050c2b16fe384bd994474655a4b4968, type: 2}
     - target: {fileID: 7546963671175497137, guid: 2ea6ea286bbb90944b9db1c4f213bd5a, type: 3}
@@ -2289,6 +2305,22 @@ PrefabInstance:
       propertyPath: m_Effectors.Array.data[3].m_Style.color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7546963671175497137, guid: 2ea6ea286bbb90944b9db1c4f213bd5a, type: 3}
+      propertyPath: m_Effectors.Array.data[4].m_Style.color.a
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546963671175497137, guid: 2ea6ea286bbb90944b9db1c4f213bd5a, type: 3}
+      propertyPath: m_Effectors.Array.data[4].m_Style.color.b
+      value: 0.15327382
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546963671175497137, guid: 2ea6ea286bbb90944b9db1c4f213bd5a, type: 3}
+      propertyPath: m_Effectors.Array.data[4].m_Style.color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546963671175497137, guid: 2ea6ea286bbb90944b9db1c4f213bd5a, type: 3}
+      propertyPath: m_Effectors.Array.data[4].m_Style.color.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -2310,6 +2342,11 @@ Transform:
 --- !u!4 &1621416458607798518 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1310219279666982336, guid: 2ea6ea286bbb90944b9db1c4f213bd5a, type: 3}
+  m_PrefabInstance: {fileID: 337410240727287094}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4048728943364745568 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4359837753424751702, guid: 2ea6ea286bbb90944b9db1c4f213bd5a, type: 3}
   m_PrefabInstance: {fileID: 337410240727287094}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &8792022351844277503 stripped
