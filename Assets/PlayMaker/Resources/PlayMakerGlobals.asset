@@ -46,3 +46,5 @@ MonoBehaviour:
   - Begin Laser Extend
   - End Laser Extend
   - Protocol
+  - LaunchProjectile
+  - Special Attack
