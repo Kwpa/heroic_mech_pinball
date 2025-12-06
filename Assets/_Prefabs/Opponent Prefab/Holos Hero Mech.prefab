@@ -495,7 +495,7 @@ MonoBehaviour:
         showInInspector: 1
         networkSync: 0
         type: 3
-        objectTypeName: UnityEngine.GameObject
+        objectTypeName: 
         floatValues: []
         intValues: 
         boolValues: 
@@ -2344,7 +2344,7 @@ MonoBehaviour:
         showInInspector: 1
         networkSync: 0
         typeName: UnityEngine.Playables.PlayableAsset
-        value: {fileID: 11400000, guid: 9e6fc354ca80419458b3b1524e691e17, type: 2}
+        value: {fileID: 11400000, guid: 26a8ed618d7b4e84a98234a86d6dbedf, type: 2}
       materialVariables: []
       textureVariables: []
       arrayVariables: []

@@ -15,7 +15,13 @@ MonoBehaviour:
   variables:
     floatVariables: []
     intVariables: []
-    boolVariables: []
+    boolVariables:
+    - useVariable: 1
+      name: ProtocolFiring
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
     stringVariables: []
     vector2Variables: []
     vector3Variables: []
@@ -30,7 +36,7 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 0000000000000000
+    variableCategoryIDs: 00000000000000000000000000000000
   events:
   - Activate Protocol 1
   - Cancel Protocol 1
