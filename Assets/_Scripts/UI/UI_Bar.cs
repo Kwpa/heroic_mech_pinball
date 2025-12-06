@@ -27,6 +27,9 @@ public class UI_Bar : MonoBehaviour
 
     public void SetFillAmount(float fillAmount)
     {
+        if (fillAmount > 1) fillAmount = 1;
+        else if (fillAmount < 0) fillAmount = 0;
+
         //tween between the values with easing over the change time
         DOTween.To(() => fillBar.fillAmount, x=> fillBar.fillAmount = x, fillAmount, changeTime).SetEase(Ease.OutCubic);
     }
