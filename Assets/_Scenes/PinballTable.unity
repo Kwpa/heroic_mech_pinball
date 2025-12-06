@@ -968,7 +968,7 @@ PrefabInstance:
       objectReference: {fileID: 1001367614}
     - target: {fileID: 2805147782892153089, guid: 723423d4423dbd147b33515fe252e635, type: 3}
       propertyPath: m_VersionIndex
-      value: 69
+      value: 72
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1042,7 +1042,7 @@ PrefabInstance:
       objectReference: {fileID: 1289929435}
     - target: {fileID: 2882990564182539039, guid: 04b92ab5d93f6f54ba85449be86cb641, type: 3}
       propertyPath: m_VersionIndex
-      value: 60
+      value: 63
       objectReference: {fileID: 0}
     - target: {fileID: 6069455757201508421, guid: 04b92ab5d93f6f54ba85449be86cb641, type: 3}
       propertyPath: force
@@ -1223,6 +1223,10 @@ PrefabInstance:
       propertyPath: fsm.variables.gameObjectVariables.Array.data[0].value
       value: 
       objectReference: {fileID: 1781032666}
+    - target: {fileID: 2543304071426792578, guid: 452c72aa4dac60440a0cda743964cf56, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.value
+      value: 
+      objectReference: {fileID: 1781032666}
     - target: {fileID: 2772337974609282926, guid: 452c72aa4dac60440a0cda743964cf56, type: 3}
       propertyPath: m_Name
       value: Bumper 2B
@@ -1321,7 +1325,7 @@ PrefabInstance:
       objectReference: {fileID: 1420372836}
     - target: {fileID: 8677140753559346974, guid: 452c72aa4dac60440a0cda743964cf56, type: 3}
       propertyPath: m_VersionIndex
-      value: 54
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8936,7 +8940,7 @@ PrefabInstance:
       objectReference: {fileID: 748551902}
     - target: {fileID: 2805147782892153089, guid: 723423d4423dbd147b33515fe252e635, type: 3}
       propertyPath: m_VersionIndex
-      value: 69
+      value: 72
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11731,7 +11735,7 @@ PrefabInstance:
       objectReference: {fileID: 606869012}
     - target: {fileID: 2805147782892153089, guid: 723423d4423dbd147b33515fe252e635, type: 3}
       propertyPath: m_VersionIndex
-      value: 69
+      value: 72
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12512,7 +12516,7 @@ PrefabInstance:
       objectReference: {fileID: 670842203}
     - target: {fileID: 2805147782892153089, guid: 723423d4423dbd147b33515fe252e635, type: 3}
       propertyPath: m_VersionIndex
-      value: 69
+      value: 72
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13202,7 +13206,7 @@ PrefabInstance:
       objectReference: {fileID: 701033855}
     - target: {fileID: 2882990564182539039, guid: 04b92ab5d93f6f54ba85449be86cb641, type: 3}
       propertyPath: m_VersionIndex
-      value: 60
+      value: 63
       objectReference: {fileID: 0}
     - target: {fileID: 6069455757201508421, guid: 04b92ab5d93f6f54ba85449be86cb641, type: 3}
       propertyPath: force
@@ -14798,7 +14802,7 @@ PrefabInstance:
       objectReference: {fileID: 1443341707}
     - target: {fileID: 2805147782892153089, guid: 723423d4423dbd147b33515fe252e635, type: 3}
       propertyPath: m_VersionIndex
-      value: 69
+      value: 72
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15649,7 +15653,7 @@ PrefabInstance:
       objectReference: {fileID: 796332926}
     - target: {fileID: 2805147782892153089, guid: 723423d4423dbd147b33515fe252e635, type: 3}
       propertyPath: m_VersionIndex
-      value: 69
+      value: 72
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16438,7 +16442,7 @@ PrefabInstance:
       objectReference: {fileID: 822579579}
     - target: {fileID: 2805147782892153089, guid: 723423d4423dbd147b33515fe252e635, type: 3}
       propertyPath: m_VersionIndex
-      value: 69
+      value: 72
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16516,7 +16520,7 @@ PrefabInstance:
       objectReference: {fileID: 1346937411}
     - target: {fileID: 8677140753559346974, guid: 452c72aa4dac60440a0cda743964cf56, type: 3}
       propertyPath: m_VersionIndex
-      value: 48
+      value: 54
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -68916,6 +68920,10 @@ PrefabInstance:
       propertyPath: fsm.variables.gameObjectVariables.Array.data[0].value
       value: 
       objectReference: {fileID: 108758135}
+    - target: {fileID: 2543304071426792578, guid: 452c72aa4dac60440a0cda743964cf56, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.value
+      value: 
+      objectReference: {fileID: 108758135}
     - target: {fileID: 2772337974609282926, guid: 452c72aa4dac60440a0cda743964cf56, type: 3}
       propertyPath: m_Name
       value: Bumper 2C
@@ -69014,7 +69022,7 @@ PrefabInstance:
       objectReference: {fileID: 431065308}
     - target: {fileID: 8677140753559346974, guid: 452c72aa4dac60440a0cda743964cf56, type: 3}
       propertyPath: m_VersionIndex
-      value: 54
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -69666,7 +69674,7 @@ PrefabInstance:
       objectReference: {fileID: 912888100}
     - target: {fileID: 2805147782892153089, guid: 723423d4423dbd147b33515fe252e635, type: 3}
       propertyPath: m_VersionIndex
-      value: 69
+      value: 72
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -74956,7 +74964,7 @@ PrefabInstance:
       objectReference: {fileID: 942869688}
     - target: {fileID: 8677140753559346974, guid: 452c72aa4dac60440a0cda743964cf56, type: 3}
       propertyPath: m_VersionIndex
-      value: 48
+      value: 54
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -102064,7 +102072,7 @@ PrefabInstance:
       objectReference: {fileID: 3034868}
     - target: {fileID: 2805147782892153089, guid: 723423d4423dbd147b33515fe252e635, type: 3}
       propertyPath: m_VersionIndex
-      value: 69
+      value: 72
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -104883,7 +104891,7 @@ PrefabInstance:
       objectReference: {fileID: 363757641}
     - target: {fileID: 2805147782892153089, guid: 723423d4423dbd147b33515fe252e635, type: 3}
       propertyPath: m_VersionIndex
-      value: 69
+      value: 72
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -105197,7 +105205,7 @@ PrefabInstance:
       objectReference: {fileID: 1252170244}
     - target: {fileID: 2882990564182539039, guid: 04b92ab5d93f6f54ba85449be86cb641, type: 3}
       propertyPath: m_VersionIndex
-      value: 60
+      value: 63
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -105219,6 +105227,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2543304071426792578, guid: 452c72aa4dac60440a0cda743964cf56, type: 3}
       propertyPath: fsm.variables.gameObjectVariables.Array.data[0].value
+      value: 
+      objectReference: {fileID: 1759895356}
+    - target: {fileID: 2543304071426792578, guid: 452c72aa4dac60440a0cda743964cf56, type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.value
       value: 
       objectReference: {fileID: 1759895356}
     - target: {fileID: 2772337974609282926, guid: 452c72aa4dac60440a0cda743964cf56, type: 3}
@@ -105319,7 +105331,7 @@ PrefabInstance:
       objectReference: {fileID: 1832296526}
     - target: {fileID: 8677140753559346974, guid: 452c72aa4dac60440a0cda743964cf56, type: 3}
       propertyPath: m_VersionIndex
-      value: 54
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -105450,7 +105462,7 @@ PrefabInstance:
       objectReference: {fileID: 752132310}
     - target: {fileID: 2805147782892153089, guid: 723423d4423dbd147b33515fe252e635, type: 3}
       propertyPath: m_VersionIndex
-      value: 69
+      value: 72
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
