@@ -130,7 +130,7 @@ MonoBehaviour:
   fillColor: {r: 0, g: 1, b: 0, a: 1}
   border: {fileID: 7855642102984877597}
   background: {fileID: 1400103770338282792}
-  fillBar: {fileID: 0}
+  fillBar: {fileID: 8562194555253668475}
 --- !u!1 &5643693657809322115
 GameObject:
   m_ObjectHideFlags: 0
