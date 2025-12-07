@@ -404,7 +404,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 0.41573033
         - useVariable: 1
           name: StagesComplete
           tooltip: 
