@@ -15,6 +15,10 @@ public class Plunger : MonoBehaviour
     [SerializeField] private float cooldownTime = 1;
     private bool cooldown = false;
 
+    [Header("SFX")]
+    [SerializeField] private AudioClip plungerSFX;
+    [SerializeField] private SFX_Player sfxPlayer;
+
     private List<Rigidbody> rigidbodies = new List<Rigidbody>();
 
     [Header("Event")]
@@ -44,6 +48,7 @@ public class Plunger : MonoBehaviour
             rb.AddForce(Vector3.forward * launchForce, ForceMode.Impulse);
         }
 
+        sfxPlayer.PlaySound(plungerSFX);
         StartCoroutine(HandleCooldown());
         plungerFired.Invoke();
     }

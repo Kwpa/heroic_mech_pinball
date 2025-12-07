@@ -1,4 +1,4 @@
-using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,6 +9,7 @@ public class Flippers : MonoBehaviour
 
     [Header("References")]
     [SerializeField] private HingeJoint joint;
+    [SerializeField] private SFX_Player sfxPlayer;
 
     [Header("Settings")]
     [SerializeField] private float springForce = 5000;
@@ -16,6 +17,9 @@ public class Flippers : MonoBehaviour
     [SerializeField] private float activatedPos = 40;
     [SerializeField] private float inactivePos = 0;
     private float inactivePosition;
+
+    [Header("SFX")]
+    [SerializeField] private List<AudioClip> bumperSFX = new List<AudioClip>();
 
     private void OnEnable()
     {
@@ -45,6 +49,7 @@ public class Flippers : MonoBehaviour
         }
         else
         {
+            PlaySFX();
             SetSpring(activatedPos);
         }
     }
@@ -62,5 +67,11 @@ public class Flippers : MonoBehaviour
         jointLimits.min = targetPos;
 
         joint.limits = jointLimits;
+    }
+
+    private void PlaySFX()
+    {
+        AudioClip sfx = bumperSFX[Random.Range(0, bumperSFX.Count)];
+        sfxPlayer.PlaySound(sfx);
     }
 }

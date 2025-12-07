@@ -19,6 +19,10 @@ public class Activator : MonoBehaviour
     [Header("Events")]
     public UnityEvent ActivatorHit;
 
+    [Header("SFX")]
+    [SerializeField] private AudioClip activatorSFX;
+    [SerializeField] private SFX_Player sfxPlayer;
+
     private Collider collider;
     private Rigidbody ballRB;
 
@@ -103,6 +107,8 @@ public class Activator : MonoBehaviour
         Vector3 forceDir = new Vector3(Random.Range(-10, 10), 0, Random.Range(-10, 10)).normalized;
         Debug.Log("Direction: X" + forceDir.x.ToString("0.00") + " Z" + forceDir.z.ToString("0.00"));
         ballRB.AddForce(forceDir * launchForce, ForceMode.Impulse);
+
+        sfxPlayer.PlaySound(activatorSFX);
 
         //reset state
         ballRB = null;
