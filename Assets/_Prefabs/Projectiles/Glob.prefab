@@ -5921,21 +5921,33 @@ MonoBehaviour:
       colorVariables: []
       rectVariables: []
       quaternionVariables: []
-      gameObjectVariables: []
-      objectVariables:
-      - useVariable: 1
-        name: Start
-        tooltip: 
-        showInInspector: 1
-        networkSync: 0
-        typeName: UnityEngine.GameObject
-        value: {fileID: 0}
+      gameObjectVariables:
       - useVariable: 1
         name: End
         tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
+      - useVariable: 1
+        name: Start
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
+      objectVariables:
+      - useVariable: 1
+        name: 
+        tooltip: 
         showInInspector: 1
         networkSync: 0
-        typeName: UnityEngine.GameObject
+        typeName: 
+        value: {fileID: 0}
+      - useVariable: 1
+        name: 
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        typeName: 
         value: {fileID: 0}
       materialVariables: []
       textureVariables: []
@@ -5943,7 +5955,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 000000000000000000000000000000000000000000000000
+      variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -6105,7 +6117,7 @@ MonoBehaviour:
   timescale: 0
   alignment: 2
   sorting: 1
-  thickness: 1
+  thickness: 3
   smoothness: 5
   smoothingDistance: 0.05
   highQualityCorners: 0
@@ -6271,7 +6283,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.39900017}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3003912115860807306}
@@ -6311,7 +6323,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 33fd64c499869f344a13c5ccaaf4bef8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

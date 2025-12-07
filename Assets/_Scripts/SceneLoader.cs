@@ -54,20 +54,27 @@ public class SceneLoader : MonoBehaviour
         Open("Environment");
     }
 
-    [MenuItem("[SCENELOAD]/AutoBattler + Environment", false, 5)]
+    [MenuItem("[SCENELOAD]/UIOverlay", false, 5)]
+    private static void GoToUIOverlay()
+    {
+        Open("UIOverlay");
+    }
+
+    [MenuItem("[SCENELOAD]/AutoBattler + Environment", false, 6)]
     private static void GoToAutoEnv()
     {
         Open("Autobattler");
         OpenAdditive("Environment");
     }
 
-    [MenuItem("[SCENELOAD]/*Game Scenes*", false, 6)]
+    [MenuItem("[SCENELOAD]/*Game Scenes*", false, 7)]
     private static void GoToGameScenes()
     {
         Open("AutoBattler");
         OpenAdditive("Environment");
         OpenAdditive("PinballTable");
         OpenAdditive("Environment");
+        OpenAdditive("UIOverlay");
     }
 
 }

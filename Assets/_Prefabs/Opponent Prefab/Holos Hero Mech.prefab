@@ -495,7 +495,7 @@ MonoBehaviour:
         showInInspector: 1
         networkSync: 0
         type: 3
-        objectTypeName: 
+        objectTypeName: UnityEngine.GameObject
         floatValues: []
         intValues: 
         boolValues: 
@@ -570,11 +570,65 @@ MonoBehaviour:
   m_Events:
     m_Signals:
     - {fileID: 11400000, guid: a02478fb19c479143a6aad9a8ea6c3d1, type: 2}
-    - {fileID: 11400000, guid: 215540e9f54a96b4da5d315a5e99cb37, type: 2}
+    - {fileID: 11400000, guid: c0ef6df7700516d44af878164dbed657, type: 2}
+    - {fileID: 11400000, guid: f5ea7d8066ad80845b52d33f26a3217d, type: 2}
+    - {fileID: 11400000, guid: 524758190bfd43944b1bd2b207d4ac5b, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 4857014379215166400}
+        - m_Target: {fileID: 2218814668512776477}
+          m_TargetAssemblyTypeName: PlayMakerFSM, PlayMaker
+          m_MethodName: SendEvent
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Set Attack
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 6815547189429597477}
+          m_TargetAssemblyTypeName: PlayMakerFSM, PlayMaker
+          m_MethodName: SendEvent
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Send Damage
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2218814668512776477}
+          m_TargetAssemblyTypeName: PlayMakerFSM, PlayMaker
+          m_MethodName: SendEvent
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Set Attack
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 6815547189429597477}
+          m_TargetAssemblyTypeName: PlayMakerFSM, PlayMaker
+          m_MethodName: SendEvent
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Send Damage
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 801138672583623402}
           m_TargetAssemblyTypeName: PlayMakerFSM, PlayMaker
           m_MethodName: SendEvent
           m_Mode: 5
@@ -609,7 +663,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Set Attack
+            m_StringArgument: Set Damage
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 6815547189429597477}
@@ -983,13 +1037,13 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 3
+        value: 1
       - useVariable: 1
         name: NumberOfHits
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 6
+        value: 1
       boolVariables:
       - useVariable: 1
         name: 
@@ -1190,13 +1244,13 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 8
+        value: 1
       - useVariable: 1
         name: MinDamage
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 8
+        value: 1
       - useVariable: 1
         name: NumberOfHits
         tooltip: 
@@ -1403,19 +1457,19 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 4
+        value: 1
       - useVariable: 1
         name: MinDamage
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 15
+        value: 1
       - useVariable: 1
         name: NumberOfHits
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 3
+        value: 1
       boolVariables:
       - useVariable: 1
         name: 
@@ -2304,13 +2358,13 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 10
+        value: 5
       - useVariable: 1
         name: MinDamage
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 10
+        value: 5
       - useVariable: 1
         name: NumberOfHits
         tooltip: 
