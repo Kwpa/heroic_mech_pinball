@@ -131,6 +131,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SetFsmString
         - HutongGames.PlayMaker.Actions.SetFsmGameObject
         - HutongGames.PlayMaker.Actions.SetEventProperties
+        - HutongGames.PlayMaker.Actions.SetScale
         - HutongGames.PlayMaker.Actions.SendEvent
         customNames:
         - 
@@ -140,10 +141,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 01010001010001
-        actionIsOpen: 01010101010001
-        actionStartIndex: 0000000006000000090000000a0000000f000000140000001a000000
-        actionHashCodes: 605323019c59e5018861160452221a025b66cf00afffe3005e69bb04
+        - 
+        actionEnabled: 0101000101000101
+        actionIsOpen: 0101010101000101
+        actionStartIndex: 0000000006000000090000000a0000000f000000140000001a00000021000000
+        actionHashCodes: 605323019c59e5018861160452221a025b66cf00afffe300afff11055e69bb04
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -177,6 +179,14 @@ MonoBehaviour:
           networkSync: 0
           value: {fileID: 0}
         fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: InstantiatedElement
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         - ownerOption: 1
           gameObject:
             useVariable: 1
@@ -338,11 +348,35 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
           value: 0
         fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
         - useVariable: 1
           name: 
           tooltip: 
@@ -361,14 +395,14 @@ MonoBehaviour:
         stringParams:
         - FINISHED
         - SetData
-        byteData: 0000000001000000
+        byteData: 00000000010000000000
         arrayParamSizes: 0200000002000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmString
         - HutongGames.PlayMaker.FsmVar
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1300000013000000130000001c0000001c0000001300000007000000120000000100000017000000140000001200000012000000120000000100000014000000120000001200000013000000010000000c00000012000000120000000c00000027000000270000001f000000170000000f00000001000000
+        paramDataType: 1300000013000000130000001c0000001c0000001300000007000000120000000100000017000000140000001200000012000000120000000100000014000000120000001200000013000000010000000c00000012000000120000000c0000002700000027000000140000001c0000000f0000000f0000000f00000001000000010000001f000000170000000f00000001000000
         paramName:
         - gameObject
         - parent
@@ -396,12 +430,19 @@ MonoBehaviour:
         - datas
         - 
         - 
+        - gameObject
+        - vector
+        - x
+        - y
+        - z
+        - everyFrame
+        - lateUpdate
         - eventTarget
         - sendEvent
         - delay
         - everyFrame
-        paramDataPos: 000000000100000002000000000000000100000003000000000000000000000004000000000000000000000001000000020000000300000005000000010000000400000005000000040000000600000000000000060000000700000001000000000000000100000000000000010000000000000007000000
-        paramByteDataSize: 000000000000000000000000000000000000000000000000040000000000000001000000000000000000000000000000000000000000000001000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000001000000
+        paramDataPos: 00000000010000000200000000000000010000000300000000000000000000000400000000000000000000000100000002000000030000000500000001000000040000000500000004000000060000000000000006000000070000000100000000000000010000000200000002000000000000000100000002000000070000000800000000000000010000000300000009000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000004000000000000000100000000000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000100000000000000000000000000000001000000
     - name: CheckForEvents
       description: 
       colorIndex: 0

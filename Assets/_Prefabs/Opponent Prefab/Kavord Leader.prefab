@@ -1747,11 +1747,65 @@ MonoBehaviour:
   m_Events:
     m_Signals:
     - {fileID: 11400000, guid: a02478fb19c479143a6aad9a8ea6c3d1, type: 2}
-    - {fileID: 11400000, guid: 215540e9f54a96b4da5d315a5e99cb37, type: 2}
+    - {fileID: 11400000, guid: c0ef6df7700516d44af878164dbed657, type: 2}
+    - {fileID: 11400000, guid: f5ea7d8066ad80845b52d33f26a3217d, type: 2}
+    - {fileID: 11400000, guid: 524758190bfd43944b1bd2b207d4ac5b, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 4857014379215166400}
+          m_TargetAssemblyTypeName: PlayMakerFSM, PlayMaker
+          m_MethodName: SendEvent
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Set Attack
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 6815547189429597477}
+          m_TargetAssemblyTypeName: PlayMakerFSM, PlayMaker
+          m_MethodName: SendEvent
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Send Damage
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2218814668512776477}
+          m_TargetAssemblyTypeName: PlayMakerFSM, PlayMaker
+          m_MethodName: SendEvent
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Set Attack
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 6815547189429597477}
+          m_TargetAssemblyTypeName: PlayMakerFSM, PlayMaker
+          m_MethodName: SendEvent
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Send Damage
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 801138672583623402}
           m_TargetAssemblyTypeName: PlayMakerFSM, PlayMaker
           m_MethodName: SendEvent
           m_Mode: 5
@@ -2160,13 +2214,13 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 3
+        value: 1
       - useVariable: 1
         name: NumberOfHits
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 6
+        value: 1
       boolVariables:
       - useVariable: 1
         name: 
@@ -2367,13 +2421,13 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 8
+        value: 1
       - useVariable: 1
         name: MinDamage
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 8
+        value: 1
       - useVariable: 1
         name: NumberOfHits
         tooltip: 
@@ -2580,19 +2634,19 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 4
+        value: 1
       - useVariable: 1
         name: MinDamage
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 15
+        value: 1
       - useVariable: 1
         name: NumberOfHits
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 3
+        value: 1
       boolVariables:
       - useVariable: 1
         name: 
@@ -2620,7 +2674,7 @@ MonoBehaviour:
         showInInspector: 1
         networkSync: 0
         typeName: UnityEngine.Playables.PlayableAsset
-        value: {fileID: 11400000, guid: 3a01859edd165f047853e6d4666a5915, type: 2}
+        value: {fileID: 11400000, guid: aaf0cf3558074784cb2a984a134be236, type: 2}
       materialVariables: []
       textureVariables: []
       arrayVariables: []
@@ -3629,7 +3683,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4179688003539926818}
   m_Father: {fileID: 8673234668888063018}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &994692210027896912
@@ -3718,13 +3773,13 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 10
+        value: 5
       - useVariable: 1
         name: MinDamage
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 10
+        value: 5
       - useVariable: 1
         name: NumberOfHits
         tooltip: 
@@ -3971,7 +4026,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4275763036182102885}
   m_Father: {fileID: 8673234668888063018}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8235031882011624305
@@ -4060,19 +4116,19 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 10
+        value: 1
       - useVariable: 1
         name: MinDamage
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 10
+        value: 1
       - useVariable: 1
         name: NumberOfHits
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 5
+        value: 1
       boolVariables:
       - useVariable: 1
         name: 
@@ -4170,6 +4226,230 @@ MonoBehaviour:
   m_Events:
     m_Signals: []
     m_Events: []
+--- !u!1001 &446962985419653417
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1373188951141545590}
+    m_Modifications:
+    - target: {fileID: 3299015361072192170, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: fsm.variables.intVariables.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299015361072192170, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: fsm.variables.floatVariables.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299015361072192170, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: fsm.variables.variableCategoryIDs.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299015361072192170, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: fsm.variables.intVariables.Array.data[0].name
+      value: Id
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299015361072192170, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: fsm.variables.floatVariables.Array.data[6].name
+      value: PercentageProgress
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299015361072192170, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: fsm.variables.floatVariables.Array.data[5].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299015361072192170, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: fsm.variables.intVariables.Array.data[0].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299015361072192170, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: fsm.variables.floatVariables.Array.data[6].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299015361072192170, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: fsm.variables.intVariables.Array.data[0].showInInspector
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299015361072192170, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: fsm.variables.floatVariables.Array.data[6].showInInspector
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424049567151850060, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424049567151850060, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424049567151850060, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424049567151850060, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424049567151850060, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424049567151850060, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424049567151850060, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424049567151850060, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424049567151850060, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424049567151850060, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5236752342985285086, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: m_Name
+      value: ProtocolTimer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5236752342985285086, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+--- !u!4 &4275763036182102885 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4424049567151850060, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+  m_PrefabInstance: {fileID: 446962985419653417}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &532653719653449070
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1169974258825838108}
+    m_Modifications:
+    - target: {fileID: 3299015361072192170, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: fsm.variables.intVariables.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299015361072192170, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: fsm.variables.floatVariables.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299015361072192170, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: fsm.variables.variableCategoryIDs.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299015361072192170, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: fsm.variables.intVariables.Array.data[0].name
+      value: Id
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299015361072192170, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: fsm.variables.intVariables.Array.data[1].name
+      value: ProtocolId
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299015361072192170, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: fsm.variables.intVariables.Array.data[0].value
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299015361072192170, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: fsm.variables.intVariables.Array.data[1].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299015361072192170, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: fsm.variables.floatVariables.Array.data[6].name
+      value: PercentageProgress
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299015361072192170, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: fsm.variables.intVariables.Array.data[0].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299015361072192170, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: fsm.variables.intVariables.Array.data[1].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299015361072192170, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: fsm.variables.floatVariables.Array.data[6].useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299015361072192170, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: fsm.variables.intVariables.Array.data[0].showInInspector
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299015361072192170, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: fsm.variables.intVariables.Array.data[1].showInInspector
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299015361072192170, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: fsm.variables.floatVariables.Array.data[6].showInInspector
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424049567151850060, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424049567151850060, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424049567151850060, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424049567151850060, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424049567151850060, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424049567151850060, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424049567151850060, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424049567151850060, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424049567151850060, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424049567151850060, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5236752342985285086, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+      propertyPath: m_Name
+      value: ProtocolTimer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+--- !u!4 &4179688003539926818 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4424049567151850060, guid: f3e4cd357f1e3644796ef9c72ca141ab, type: 3}
+  m_PrefabInstance: {fileID: 532653719653449070}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &870904127890846733
 PrefabInstance:
   m_ObjectHideFlags: 0
