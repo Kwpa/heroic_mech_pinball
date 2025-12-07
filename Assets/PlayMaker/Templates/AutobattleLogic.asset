@@ -456,11 +456,11 @@ MonoBehaviour:
               useVariable: 1
               name: OpponentAZone
               tooltip: 
-              showInInspector: 0
+              showInInspector: 1
               networkSync: 0
             fsmVar:
               variableName: OppWithAdvZone
-              objectType: 
+              objectType: UnityEngine.Object
               useVariable: 1
               type: 1
               floatValue: 0
@@ -488,11 +488,11 @@ MonoBehaviour:
               useVariable: 1
               name: OpponentBZone
               tooltip: 
-              showInInspector: 0
+              showInInspector: 1
               networkSync: 0
             fsmVar:
               variableName: OppWithoutAdvZone
-              objectType: 
+              objectType: UnityEngine.Object
               useVariable: 1
               type: 1
               floatValue: 0
@@ -1791,7 +1791,7 @@ MonoBehaviour:
           value: {fileID: 0}
         fsmVarParams:
         - variableName: TM_ZeroDiffMelee
-          objectType: 
+          objectType: UnityEngine.Playables.PlayableAsset
           useVariable: 1
           type: 12
           floatValue: 0
@@ -1948,7 +1948,7 @@ MonoBehaviour:
           value: {fileID: 0}
         fsmVarParams:
         - variableName: TM_OneDiffMidRange
-          objectType: 
+          objectType: UnityEngine.Playables.PlayableAsset
           useVariable: 1
           type: 12
           floatValue: 0
@@ -2458,7 +2458,7 @@ MonoBehaviour:
           value: {fileID: 0}
         fsmVarParams:
         - variableName: TM_WithoutAdv_Retreat
-          objectType: 
+          objectType: UnityEngine.Playables.PlayableAsset
           useVariable: 1
           type: 12
           floatValue: 0
@@ -2980,7 +2980,7 @@ MonoBehaviour:
           value: {fileID: 0}
         fsmVarParams:
         - variableName: TM_Adv_Charge
-          objectType: 
+          objectType: UnityEngine.Playables.PlayableAsset
           useVariable: 1
           type: 12
           floatValue: 0
@@ -3739,11 +3739,11 @@ MonoBehaviour:
               useVariable: 1
               name: AdvDirection
               tooltip: 
-              showInInspector: 0
+              showInInspector: 1
               networkSync: 0
             fsmVar:
               variableName: AdvantageDirection
-              objectType: 
+              objectType: UnityEngine.Object
               useVariable: 1
               type: 1
               floatValue: 0
@@ -3771,11 +3771,11 @@ MonoBehaviour:
               useVariable: 1
               name: OpponentWithAdvantageZone
               tooltip: 
-              showInInspector: 0
+              showInInspector: 1
               networkSync: 0
             fsmVar:
               variableName: OppWithAdvZone
-              objectType: 
+              objectType: UnityEngine.Object
               useVariable: 1
               type: 1
               floatValue: 0
@@ -3803,11 +3803,11 @@ MonoBehaviour:
               useVariable: 1
               name: OpponentWithoutAdvantageZone
               tooltip: 
-              showInInspector: 0
+              showInInspector: 1
               networkSync: 0
             fsmVar:
               variableName: OppWithoutAdvZone
-              objectType: 
+              objectType: UnityEngine.Object
               useVariable: 1
               type: 1
               floatValue: 0
@@ -4022,11 +4022,11 @@ MonoBehaviour:
               useVariable: 1
               name: AdvDirection
               tooltip: 
-              showInInspector: 0
+              showInInspector: 1
               networkSync: 0
             fsmVar:
               variableName: AdvantageDirection
-              objectType: 
+              objectType: UnityEngine.Object
               useVariable: 1
               type: 1
               floatValue: 0
@@ -4054,11 +4054,11 @@ MonoBehaviour:
               useVariable: 1
               name: OpponentWithAdvantageZone
               tooltip: 
-              showInInspector: 0
+              showInInspector: 1
               networkSync: 0
             fsmVar:
               variableName: OppWithAdvZone
-              objectType: 
+              objectType: UnityEngine.Object
               useVariable: 1
               type: 1
               floatValue: 0
@@ -4086,11 +4086,11 @@ MonoBehaviour:
               useVariable: 1
               name: OpponentWithoutAdvantageZone
               tooltip: 
-              showInInspector: 0
+              showInInspector: 1
               networkSync: 0
             fsmVar:
               variableName: OppWithoutAdvZone
-              objectType: 
+              objectType: UnityEngine.Object
               useVariable: 1
               type: 1
               floatValue: 0
@@ -4927,7 +4927,7 @@ MonoBehaviour:
           value: {fileID: 0}
         fsmVarParams:
         - variableName: TM_WithoutAdv_Charge
-          objectType: 
+          objectType: UnityEngine.Playables.PlayableAsset
           useVariable: 1
           type: 12
           floatValue: 0
@@ -5703,7 +5703,7 @@ MonoBehaviour:
         fsmObjectParams: []
         fsmVarParams:
         - variableName: DefeatedOpponent
-          objectType: 
+          objectType: UnityEngine.Object
           useVariable: 1
           type: 1
           floatValue: 0
@@ -5727,7 +5727,7 @@ MonoBehaviour:
             vector4Values: []
             objectReferences: []
         - variableName: WinOpponent
-          objectType: 
+          objectType: UnityEngine.Object
           useVariable: 1
           type: 1
           floatValue: 0
@@ -5871,7 +5871,7 @@ MonoBehaviour:
           value: {fileID: 0}
         fsmVarParams:
         - variableName: TM_Adv_Defeat
-          objectType: 
+          objectType: UnityEngine.Playables.PlayableAsset
           useVariable: 1
           type: 12
           floatValue: 0
@@ -5943,7 +5943,7 @@ MonoBehaviour:
             vector4Values: []
             objectReferences: []
         - variableName: TM_WithoutAdv_Win
-          objectType: 
+          objectType: UnityEngine.Playables.PlayableAsset
           useVariable: 1
           type: 12
           floatValue: 0
@@ -6115,7 +6115,7 @@ MonoBehaviour:
           value: {fileID: 0}
         fsmVarParams:
         - variableName: TM_WithoutAdv_Defeat
-          objectType: 
+          objectType: UnityEngine.Playables.PlayableAsset
           useVariable: 1
           type: 12
           floatValue: 0
@@ -6187,7 +6187,7 @@ MonoBehaviour:
             vector4Values: []
             objectReferences: []
         - variableName: TM_Adv_Win
-          objectType: 
+          objectType: UnityEngine.Playables.PlayableAsset
           useVariable: 1
           type: 12
           floatValue: 0
