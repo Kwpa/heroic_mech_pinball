@@ -25,6 +25,8 @@ public class Bumper : MonoBehaviour
     [Header("Reference")]
     [SerializeField] private SFX_Player sfxPlayer;
 
+    [SerializeField] private Vector3 originalScale;
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Ball"))
@@ -40,6 +42,7 @@ public class Bumper : MonoBehaviour
             ballRB.AddForce(normal * bounceForce, ForceMode.Impulse);
 
             //feedback on hit
+            transform.localScale = originalScale;
             transform.DOPunchScale(Vector3.one * punchScale, punchduration, vibrato, elasticity);
             PlaySFX();
 
@@ -57,5 +60,10 @@ public class Bumper : MonoBehaviour
         sfxPlayer.PlaySound(bump);
         sfxPlayer.PlaySound(ding);
         sfxPlayer.PlaySound(zap);
+    }
+
+    private void Start()
+    {
+        originalScale = transform.localScale;
     }
 }
